@@ -2,25 +2,16 @@
   <nav id="nav-bar">
     <ul class="nav-items">
       <NuxtLink to="/" style="text-decoration: none; color: black">
-        <li>
-          <img src="../assets/home-icon.png" class="home-icon" /> Home
-        </li></NuxtLink
+        <li>Home</li></NuxtLink
       >
       <NuxtLink to="/aboutme" style="text-decoration: none; color: black"
-        ><li>
-          <img src="../assets/aboutme-icon.png" class="aboutme-icon" /> About me
-        </li></NuxtLink
+        ><li>About me</li></NuxtLink
       >
       <NuxtLink to="/projects" style="text-decoration: none; color: black"
-        ><li>
-          <img src="../assets/projects-icon.png" class="projects-icon" />
-          Projects
-        </li></NuxtLink
+        ><li>Projects</li></NuxtLink
       >
       <NuxtLink to="/contacts" style="text-decoration: none; color: black"
-        ><li>
-          <img src="../assets/email-icon.png" class="contacts-icon" /> Contacts
-        </li></NuxtLink
+        ><li>Contacts</li></NuxtLink
       >
     </ul>
   </nav>
@@ -38,22 +29,14 @@
 }
 .nav-items {
   list-style: none;
-  background-color: white;
   height: 100%;
-  width: 150%;
-  padding-top: 200%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
 .nav-items li {
   padding-bottom: 50px;
-}
-
-.home-icon,
-.aboutme-icon,
-.projects-icon,
-.contacts-icon {
-  width: 13%;
-  height: 25px;
 }
 
 @media only screen and (max-width: 600px) {

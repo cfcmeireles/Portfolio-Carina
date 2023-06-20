@@ -21,7 +21,11 @@ definePageMeta({
 });
 </script>
     
-    <style scoped>
+    <style>
+body {
+  background-color: lightgray !important;
+}
+
 input[type="text"],
 textarea {
   width: 100%;
