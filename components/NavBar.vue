@@ -20,12 +20,11 @@
 <script setup>
 </script>
     
-<style scoped>
+<style>
 #nav-bar {
   position: fixed;
   left: 0;
   height: 100%;
-  top: -20px;
 }
 .nav-items {
   list-style: none;

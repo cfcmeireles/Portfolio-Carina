@@ -39,26 +39,9 @@ export default {
 </script>
       
   <style scoped>
-#nav-bar {
-  position: fixed;
-  left: 0;
-  height: 100%;
-  top: -20px;
-}
-.nav-items {
-  list-style: none;
-  /* background-color: white; */
-  height: 100%;
-  width: 150%;
-  /* padding-top: 200%; */
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-}
-
-.nav-items li {
+/* .nav-items li {
   padding-bottom: 50px;
-}
+} */
 .name-bar {
   position: absolute;
   bottom: 0;
