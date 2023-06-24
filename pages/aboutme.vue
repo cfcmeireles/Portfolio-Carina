@@ -2,21 +2,27 @@
   <main id="about-me-page">
     <div class="about-me">
       <h1 class="section-titles">About me</h1>
-      <h2>Hi, I'm <strong>Carina Meireles</strong></h2>
-      <p>
-        I'm an aspiring Web Developer with 1 year of learning experience. I'm
-        from Lisbon and I love technology and gaming.
-      </p>
-      <p>
-        My goal is to develop interactive, responsive software that seamlessly
-        engages users and adapts to their needs, while providing invaluable
-        functionality.
-      </p>
-      <h2>What is my skill level?</h2>
-      <p>
-        At the moment, I am still building a solid foundation in Front-end
-        development, my current skills are:
-      </p>
+      <div class="about-me-text">
+        <div>
+          <h2>Hi, I'm <strong>Carina Meireles</strong></h2>
+          <p>
+            I'm an aspiring Web Developer with 1 year of learning experience.
+            I'm from Lisbon and I love technology and gaming.
+          </p>
+          <p>
+            My goal is to develop interactive, responsive software that
+            seamlessly engages users and adapts to their needs, while providing
+            invaluable functionality.
+          </p>
+        </div>
+        <div>
+          <h2>What is my skill level?</h2>
+          <p>
+            At the moment, I am still building a solid foundation in Front-end
+            development, my current skills are:
+          </p>
+        </div>
+      </div>
       <img src="../assets/html-5.png" height="50" />
       <div class="container">
         <div class="skills html"></div>
@@ -49,6 +55,11 @@ definePageMeta({
   
 <style>
 @import "../app.css";
+
+.about-me-text {
+  display: grid;
+  grid-template-columns: 600px 600px;
+}
 
 .container {
   width: 80%;
