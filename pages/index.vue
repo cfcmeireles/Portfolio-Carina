@@ -2,19 +2,26 @@
   <main id="home-page">
     <div class="home">
       <transition name="fade">
+        <img class="photo" v-if="showPhoto" src="../assets/carina-photo.png" />
+      </transition>
+
+      <transition name="fade">
         <h1 v-if="showName">Carina Meireles</h1>
       </transition>
-      <div class="lol">
-        <transition name="typewriter">
-          <h2 v-if="showText">
-            I am an aspiring developer based in Lisbon, Portugal
-            <br />
-          </h2>
-        </transition>
-        <transition name="typewriter">
-          <h2 v-if="showText">Currently employed by Miniclip</h2>
-        </transition>
-      </div>
+      <VueWriter
+        v-if="showText"
+        :array="['I am an aspiring developer based in Lisbon, Portugal']"
+        :iterations="1"
+        :typeSpeed="50"
+        class="writer-text"
+      />
+      <VueWriter
+        v-if="showText2"
+        :array="['Currently employed by Miniclip']"
+        :iterations="1"
+        :typeSpeed="50"
+        class="writer-text"
+      />
       <transition name="fadeIn">
         <div v-if="showIcons">
           <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
@@ -41,22 +48,31 @@
 </template>
 
 <script>
+import VueWriter from "vue-writer";
 export default {
+  components: { VueWriter },
   data() {
     return {
+      arr: "hello",
+      showPhoto: false,
       showName: false,
       showText: false,
+      showText2: false,
       showIcons: false,
     };
   },
   mounted() {
+    this.showPhoto = true;
     this.showName = true;
     setTimeout(() => {
       this.showText = true;
     }, 2000);
     setTimeout(() => {
+      this.showText2 = true;
+    }, 5000);
+    setTimeout(() => {
       this.showIcons = true;
-    }, 6000);
+    }, 7000);
   },
 };
 </script>
@@ -71,19 +87,31 @@ export default {
 
 .home {
   text-align: center;
-  height: 205px;
+  /* height: 490px; */
+  height: 50vh;
 }
 
-.lol {
-  text-align: center;
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.photo {
+  width: 40%;
+}
+
+.writer-text {
+  font-size: 1.5em;
+  line-height: 2em;
 }
 
 .github-icon {
-  width: 3%;
+  /* width: 2.5%; */
+  height: 40px;
   padding-right: 10px;
+  margin-top: 10px;
 }
 .linkedin-icon {
-  width: 3%;
+  height: 40px;
 }
 .fade-enter-active {
   animation: fadeIn 2s;
@@ -109,9 +137,9 @@ export default {
     transform: translateY(0);
   }
 }
-
+/* 
 .typewriter-enter-active {
-  animation: typewriter 2s steps(40) 1s forwards;
+  animation: typewriter 2s steps(40);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -123,7 +151,7 @@ export default {
   to {
     width: 100%;
   }
-}
+} */
 
 .fadeIn-enter-active {
   transition: opacity 1.5s ease-in-out;
