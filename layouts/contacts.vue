@@ -8,8 +8,8 @@
     <slot />
   </div>
 </template>
-
-<script>
+  
+  <script>
 export default {
   data() {
     return {
@@ -22,8 +22,8 @@ export default {
   },
 };
 </script>
-
-<style>
+  
+  <style>
 .fade-enter-active {
   transition: opacity 1.5s ease-in-out;
 }

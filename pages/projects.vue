@@ -79,7 +79,7 @@
     
 <script>
 definePageMeta({
-  layout: "namebar",
+  layout: "projects",
 });
 </script>
     

@@ -17,7 +17,7 @@
     
 <script >
 definePageMeta({
-  layout: "namebar",
+  layout: "contacts",
 });
 </script>
     

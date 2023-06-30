@@ -2,11 +2,11 @@
   <main id="home-page">
     <div class="home">
       <transition name="fade">
-        <img class="photo" v-if="showPhoto" src="../assets/carina-photo.png" />
+        <img class="photo" v-if="showPhoto" src="../assets/kina_avatar.png" />
       </transition>
 
       <transition name="fade">
-        <h1 v-if="showName">Carina Meireles</h1>
+        <h1 class="fullname" v-if="showName">CARINA MEIRELES</h1>
       </transition>
       <VueWriter
         v-if="showText"
@@ -96,12 +96,15 @@ h1 {
   margin-bottom: 10px;
 }
 .photo {
-  width: 40%;
+  width: 200px;
+  /* border: 5px solid #66fcf1; */
 }
 
 .writer-text {
-  font-size: 1.5em;
+  font-size: 0.9em;
   line-height: 2em;
+  color: white;
+  font-family: "Space Mono", monospace;
 }
 
 .github-icon {

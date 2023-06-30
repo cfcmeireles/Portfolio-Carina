@@ -1,99 +1,34 @@
 <template>
-  <nav id="nav-bar">
-    <ul class="nav-items">
-      <div
-        class="nav-item"
-        @mouseover="homeIsHovered = true"
-        @mouseleave="homeIsHovered = false"
-      >
-        <NuxtLink to="/" style="text-decoration: none; color: black">
-          <li>Home</li></NuxtLink
-        >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': homeIsHovered }"
-        ></div>
-      </div>
-      <div
-        class="nav-item"
-        @mouseover="aboutMeIsHovered = true"
-        @mouseleave="aboutMeIsHovered = false"
-      >
-        <NuxtLink to="/aboutme" style="text-decoration: none; color: black"
-          ><li>About me</li></NuxtLink
-        >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': aboutMeIsHovered }"
-        ></div>
-      </div>
-      <div
-        class="nav-item"
-        @mouseover="ProjectsIsHovered = true"
-        @mouseleave="ProjectsIsHovered = false"
-      >
-        <NuxtLink to="/projects" style="text-decoration: none; color: black"
-          ><li>Projects</li></NuxtLink
-        >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': ProjectsIsHovered }"
-        ></div>
-      </div>
-      <div
-        class="nav-item"
-        @mouseover="ContactsIsHovered = true"
-        @mouseleave="ContactsIsHovered = false"
-      >
-        <NuxtLink to="/contacts" style="text-decoration: none; color: black"
-          ><li>Contacts</li></NuxtLink
-        >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': ContactsIsHovered }"
-        ></div>
-      </div>
-    </ul>
-    <transition name="fade">
-      <div class="name-bar" v-if="showNameBar">
-        <p style="font-size: 13px">Hire me</p>
-        <p style="font-size: 13px">carinacmeireles@gmail.com</p>
-        <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
-          <img
-            src="../assets/github-logo.png"
-            class="github-icon"
-            alt="GitHub Logo"
-          />
-        </NuxtLink>
-        <NuxtLink
-          to="https://www.linkedin.com/in/carina-meireles/"
-          target="_blank"
-        >
-          <img
-            src="../assets/linkedin-logo.png"
-            class="linkedin-icon"
-            alt="Linkedin Logo"
-          />
-        </NuxtLink>
-      </div>
-    </transition>
-  </nav>
+  <div class="name-bar">
+    <p style="font-size: 13px">Hire me</p>
+    <p style="font-size: 13px">carinacmeireles@gmail.com</p>
+    <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
+      <img
+        src="../assets/github-logo.png"
+        class="github-icon"
+        alt="GitHub Logo"
+      />
+    </NuxtLink>
+    <NuxtLink to="https://www.linkedin.com/in/carina-meireles/" target="_blank">
+      <img
+        src="../assets/linkedin-logo.png"
+        class="linkedin-icon"
+        alt="Linkedin Logo"
+      />
+    </NuxtLink>
+  </div>
 </template>
       
   <script>
 export default {
-  data() {
-    return {
-      showNameBar: false,
-      homeIsHovered: false,
-      aboutMeIsHovered: false,
-      ProjectsIsHovered: false,
-      ContactsIsHovered: false,
-    };
-  },
-  mounted() {
-    this.showNameBar = true;
-  },
+  // data() {
+  //   return {
+  //     homeIsHovered: false,
+  //     aboutMeIsHovered: false,
+  //     ProjectsIsHovered: false,
+  //     ContactsIsHovered: false,
+  //   };
+  // },
 };
 </script>
       
@@ -146,15 +81,15 @@ export default {
   padding-bottom: 50px;
 } */
 .name-bar {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
 }
 
 .github-icon {
-  width: 20%;
+  width: 3%;
 }
 .linkedin-icon {
-  width: 20%;
+  width: 3%;
 }
 
 .fade-enter-active {

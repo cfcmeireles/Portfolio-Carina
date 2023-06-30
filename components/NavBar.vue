@@ -1,85 +1,59 @@
 <template>
   <nav id="nav-bar">
     <ul class="nav-items">
-      <div
-        class="nav-item"
-        @mouseover="homeIsHovered = true"
-        @mouseleave="homeIsHovered = false"
-      >
+      <div class="nav-item">
         <NuxtLink to="/" style="text-decoration: none; color: black">
-          <li>Home</li></NuxtLink
+          <li>HOME</li></NuxtLink
         >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': homeIsHovered }"
-        ></div>
+        <div class="line"></div>
       </div>
-      <div
-        class="nav-item"
-        @mouseover="aboutMeIsHovered = true"
-        @mouseleave="aboutMeIsHovered = false"
-      >
+      <div class="nav-item">
         <NuxtLink to="/aboutme" style="text-decoration: none; color: black"
-          ><li>About me</li></NuxtLink
+          ><li>ABOUT</li></NuxtLink
         >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': aboutMeIsHovered }"
-        ></div>
+        <div class="line"></div>
       </div>
-      <div
-        class="nav-item"
-        @mouseover="ProjectsIsHovered = true"
-        @mouseleave="ProjectsIsHovered = false"
-      >
+      <div class="nav-item">
         <NuxtLink to="/projects" style="text-decoration: none; color: black"
-          ><li>Projects</li></NuxtLink
+          ><li>PROJECTS</li></NuxtLink
         >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': ProjectsIsHovered }"
-        ></div>
+        <div class="line"></div>
       </div>
-      <div
-        class="nav-item"
-        @mouseover="ContactsIsHovered = true"
-        @mouseleave="ContactsIsHovered = false"
-      >
+      <div class="nav-item">
         <NuxtLink to="/contacts" style="text-decoration: none; color: black"
-          ><li>Contacts</li></NuxtLink
+          ><li>CONTACT</li></NuxtLink
         >
-        <div
-          class="horizontal-line"
-          :class="{ 'move-right': ContactsIsHovered }"
-        ></div>
+        <div class="line"></div>
       </div>
     </ul>
   </nav>
 </template>
     
 <script>
-export default {
-  data() {
-    return {
-      homeIsHovered: false,
-      aboutMeIsHovered: false,
-      ProjectsIsHovered: false,
-      ContactsIsHovered: false,
-    };
-  },
-};
+// export default {
+//   data() {
+//     return {
+//       clicked: false,
+//       homeIsHovered: false,
+//       aboutMeIsHovered: false,
+//       ProjectsIsHovered: false,
+//       ContactsIsHovered: false,
+//     };
+//   },
+// };
 </script>
     
 <style>
-.move-right {
+.nav-item:hover .line {
   transform: translateX(20px);
 }
-.horizontal-line {
-  border-top: 1px black;
+
+.line {
+  border-top: 1px #66fcf1;
   transition: transform 0.3s ease-in-out;
 }
 
-.horizontal-line::before {
+.line::before {
   content: "";
   display: block;
   border-top: 1px solid black;

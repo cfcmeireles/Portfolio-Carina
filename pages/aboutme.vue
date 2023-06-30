@@ -49,7 +49,7 @@
   
 <script>
 definePageMeta({
-  layout: "namebar",
+  layout: "aboutme",
 });
 </script>
   
