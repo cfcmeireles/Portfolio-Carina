@@ -48,9 +48,6 @@
 </template>
   
 <script>
-definePageMeta({
-  layout: "aboutme",
-});
 </script>
   
 <style>

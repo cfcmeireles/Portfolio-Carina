@@ -16,16 +16,9 @@
 </template>
     
 <script >
-definePageMeta({
-  layout: "contacts",
-});
 </script>
     
     <style>
-body {
-  background-color: lightgray !important;
-}
-
 input[type="text"],
 textarea {
   width: 100%;

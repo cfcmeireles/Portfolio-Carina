@@ -78,9 +78,6 @@
 </template>
     
 <script>
-definePageMeta({
-  layout: "projects",
-});
 </script>
     
 <style scoped>

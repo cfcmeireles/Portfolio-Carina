@@ -1,7 +1,7 @@
 <template>
   <div>
     <HamburgerMenu />
-    <NavBar />
+    <NavBar @routeChanged="handleClassChanged" :nameBar="currentClassName" />
     <slot />
   </div>
 </template>
@@ -10,6 +10,16 @@
 export default {
   mounted() {
     document.body.classList.add("gradient-body");
+  },
+  data() {
+    return {
+      currentClassName: "name-bar",
+    };
+  },
+  methods: {
+    handleClassChanged() {
+      this.currentClassName = "name-bar active";
+    },
   },
 };
 </script>
