@@ -26,7 +26,7 @@
         <div class="line"></div>
       </div>
     </ul>
-    <div :class="nameBar">
+    <div :class="nameBar" v-if="showNameBar">
       <p style="font-size: 13px">Hire me</p>
       <p style="font-size: 13px">carinacmeireles@gmail.com</p>
       <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
@@ -56,10 +56,14 @@ export default {
     nameBar: {
       type: String,
     },
+    showNameBar: {
+      type: Boolean,
+      required: true,
+    },
   },
   watch: {
-    $route(noNameBar, withNameBar) {
-      this.$emit("routeChanged", noNameBar, withNameBar);
+    $route() {
+      this.$emit("routeChanged");
     },
   },
 };
@@ -133,11 +137,21 @@ export default {
   opacity: 0;
   position: fixed;
   bottom: 10px;
+  /* animation: fadeIn 1.5s ease-in-out; */
 }
 
 .name-bar.active {
   opacity: 1;
-  transition: opacity 1.5s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .github-icon {

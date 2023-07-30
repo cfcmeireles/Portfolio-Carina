@@ -1,7 +1,11 @@
 <template>
   <div>
     <HamburgerMenu />
-    <NavBar @routeChanged="handleClassChanged" :nameBar="currentClassName" />
+    <NavBar
+      @routeChanged="handleClassChanged"
+      :nameBar="currentClassName"
+      :showNameBar="showNameBar"
+    />
     <slot />
   </div>
 </template>
@@ -14,11 +18,21 @@ export default {
   data() {
     return {
       currentClassName: "name-bar",
+      showNameBar: true,
     };
   },
   methods: {
     handleClassChanged() {
-      this.currentClassName = "name-bar active";
+      if (this.$route.path !== "/") {
+        (this.showNameBar = false),
+          setTimeout(() => {
+            this.currentClassName = "name-bar active";
+            this.showNameBar = true;
+          }, 1000);
+      } else {
+        this.showNameBar = false;
+        this.currentClassName = "name-bar";
+      }
     },
   },
 };
