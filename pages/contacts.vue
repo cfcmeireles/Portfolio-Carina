@@ -9,13 +9,13 @@
         <input type="text" id="email" placeholder="Your email" />
         <label for="subject">Subject</label>
         <textarea id="subject" placeholder="Write here"></textarea>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" @click.prevent="mailto" />
       </form>
     </div>
   </main>
 </template>
     
-<script >
+<script>
 </script>
     
     <style>

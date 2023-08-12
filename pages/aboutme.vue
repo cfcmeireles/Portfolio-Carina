@@ -99,7 +99,7 @@
 
 @keyframes js-fill {
   100% {
-    width: 70%;
+    width: 50%;
   }
 }
 

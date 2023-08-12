@@ -109,7 +109,7 @@ export default {
   height: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .hamburger-menu {
     display: block;
     position: absolute;

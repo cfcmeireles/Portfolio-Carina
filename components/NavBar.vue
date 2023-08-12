@@ -106,7 +106,7 @@ export default {
   padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   #nav-bar {
     display: none;
   }
@@ -155,10 +155,10 @@ export default {
 }
 
 .github-icon {
-  width: 3%;
+  width: 30px;
 }
 .linkedin-icon {
-  width: 3%;
+  width: 30px;
 }
 
 /* .fade-enter-active {
@@ -168,10 +168,4 @@ export default {
 .fade-enter-from {
   opacity: 0;
 } */
-
-@media only screen and (max-width: 600px) {
-  #nav-bar {
-    display: none;
-  }
-}
 </style>

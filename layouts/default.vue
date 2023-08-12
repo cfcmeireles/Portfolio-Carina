@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <HamburgerMenu />
-    <NavBar
-      @routeChanged="handleClassChanged"
-      :nameBar="currentClassName"
-      :showNameBar="showNameBar"
-    />
-    <slot />
+  <div class="layout">
+    <div class="nav-bars">
+      <HamburgerMenu />
+      <NavBar
+        @routeChanged="handleClassChanged"
+        :nameBar="currentClassName"
+        :showNameBar="showNameBar"
+      />
+    </div>
+    <div class="main-content">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -45,6 +49,14 @@ export default {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
+}
+
+@media only screen and (min-width: 950px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 5% 1fr;
+    grid-gap: 20px;
+  }
 }
 
 @keyframes gradient {
