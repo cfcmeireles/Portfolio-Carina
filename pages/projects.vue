@@ -15,68 +15,92 @@
       <div class="project-preview">
         <Transition name="fade">
           <div class="project-one" v-if="showTransitionProjectOne">
-            <h2>Password Generator with Vue 3</h2>
             <a
               href="http://courageous-paletas-8356a0.netlify.app/"
               target="_blank"
             >
+              <h2>Password Generator</h2>
               <img
                 src="../assets/projects/PasswordGenerator.png"
                 class="project-imgs"
               />
+              <p>
+                In this project I had the opportunity to practice Vue 3 by
+                building a useful Password Generator
+              </p>
+              <div class="skills-bar">
+                <p>Skills used:</p>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/vue.png" />
+              </div>
             </a>
-            <p>
-              In this project I had the opportunity to practice Vue 3 by
-              building a Password Generator
-            </p>
           </div>
         </Transition>
         <Transition name="fade">
           <div class="project-two" v-if="showTransitionProjectTwo">
-            <h2>To do app with Vue 3</h2>
             <a href="http://magenta-melba-71e7bd.netlify.app" target="_blank">
+              <h2>To do app</h2>
               <img src="../assets/projects/ToDoList.png" class="project-imgs" />
+              <p>
+                As my first Vue 3 project, I developed a simple to do app that
+                allows users to add, remove and filter through priority list
+                tasks
+              </p>
+              <div class="skills-bar">
+                <p>Skills used:</p>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/vue.png" />
+              </div>
             </a>
-            <p>
-              As my first Vue 3 project, I developed a simple to do app that
-              allows users to add, remove and filter through priority list tasks
-            </p>
           </div>
         </Transition>
         <Transition name="fade">
           <div class="project-three" v-if="showTransitionProjectThree">
-            <h2>Basketball Scoreboard with CSS grid and flex</h2>
-            <a
-              href="http://basketball-scoreboard-cm.netlify.app"
-              target="_blank"
-            >
+            <a href="https://support.miniclip.com/hc/en-us" target="_blank">
+              <h2>Miniclip's Knowledge Base</h2>
               <img
-                src="../assets/projects/BasketballScoreboard.png"
                 class="project-imgs"
+                src="../assets/projects/MiniclipKB.png"
               />
+              <p>
+                As part of my training, I had the chance to practice solid
+                basics of HTML, CSS and JavaScript while completely revamping
+                the support website for Miniclip
+              </p>
+              <div class="skills-bar">
+                <p>Skills used:</p>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/js.png" />
+              </div>
             </a>
-            <p>
-              As part of a Scrimba course, I had the opportunity to develop
-              extra features on a Basketball scoreboard app, allowing me to
-              practice CSS grid and flex concepts in the process
-            </p>
           </div>
         </Transition>
         <Transition name="fade">
           <div class="project-four" v-if="showTransitionProjectFour">
-            <h2>Game of Pig with JavaScript</h2>
-            <a href="http://game-of-pig-v2.netlify.app/" target="_blank">
+            <a
+              href="http://basketball-scoreboard-cm.netlify.app"
+              target="_blank"
+            >
+              <h2>Basketball Scoreboard</h2>
               <img
-                src="../assets/projects/GameOfPig.png"
+                src="../assets/projects/BasketballScoreboard.png"
                 class="project-imgs"
               />
+              <p>
+                As part of a Scrimba course, I developed extra features on a
+                Basketball scoreboard app, allowing me to practice CSS grid and
+                flex concepts in the process
+              </p>
+              <div class="skills-bar">
+                <p>Skills used:</p>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/js.png" />
+              </div>
             </a>
-            <p>
-              While learning JavaScript with Coursera, I had the chance to
-              develop extra features on the classic Game of Pig, with extra
-              players, score limit choice and more dice, I was able to improve
-              my JavaScript skills
-            </p>
           </div>
         </Transition>
       </div>
@@ -123,6 +147,15 @@ export default {
   text-align: center;
 }
 
+@media only screen and (max-width: 1650px) {
+  .project-one,
+  .project-two,
+  .project-three,
+  .project-four {
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 1650px) {
   .project-preview {
     display: grid;
@@ -134,7 +167,21 @@ export default {
     justify-content: center;
     align-items: flex-start;
     column-gap: 5%;
+    row-gap: 5%;
   }
+
+  .project-one:hover,
+  .project-two:hover,
+  .project-three:hover,
+  .project-four:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.projects {
+  margin-bottom: 100px;
 }
 
 /* img {
@@ -152,10 +199,45 @@ export default {
   /* display: flex; */
   /* max-width: 100%; */
   max-width: 600px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightgrey;
+  max-height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s, margin 0.3s;
+}
+/* .project-one:hover,
+.project-two:hover {
+  margin-top: 40px;
+} */
+
+.project-one p,
+.project-two p,
+.project-three p,
+.project-four p {
+  color: black;
 }
 .project-imgs {
   width: 100%;
   height: 100%;
+}
+
+.skills-bar {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  background: grey;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-icons {
+  width: 10%;
+  height: 10%;
 }
 
 h2,
@@ -171,5 +253,10 @@ h2,
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 </style>

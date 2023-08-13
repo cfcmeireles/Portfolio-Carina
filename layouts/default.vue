@@ -45,7 +45,7 @@ export default {
 
 <style>
 .gradient-body {
-  background: linear-gradient(-45deg, #66fcf1, #46a29f, #202833);
+  background: linear-gradient(-45deg, #46a29f, #202833);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
