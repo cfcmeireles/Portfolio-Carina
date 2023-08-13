@@ -146,6 +146,11 @@ export default {
 .projects {
   text-align: center;
 }
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media only screen and (max-width: 1650px) {
   .project-one,
