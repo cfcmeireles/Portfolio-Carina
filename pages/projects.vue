@@ -13,83 +13,96 @@
         >
       </p>
       <div class="project-preview">
-        <Transition name="fade">
-          <ProjectFrames v-if="showTransitionProjectOne">
-            <template #title>Password Generator</template>
-            <template #image
-              ><img
-                src="../assets/projects/PasswordGenerator.png"
-                class="project-imgs"
-            /></template>
-            <template #description>
-              In this project I had the opportunity to practice Vue 3 by
-              building a useful Password Generator</template
-            >
-            <template #skills>
-              <img class="skills-icons" src="../assets/html-5.png" />
-              <img class="skills-icons" src="../assets/css-3.png" />
-              <img class="skills-icons" src="../assets/vue.png" />
-            </template>
-          </ProjectFrames>
-        </Transition>
-        <Transition name="fade">
-          <ProjectFrames v-if="showTransitionProjectTwo">
-            <template #title>To do app</template>
-            <template #image
-              ><img src="../assets/projects/ToDoList.png" class="project-imgs"
-            /></template>
-            <template #description>
-              As my first Vue 3 project, I developed a simple to do app that
-              allows users to add, remove and filter through priority list
-              tasks</template
-            >
-            <template #skills>
-              <img class="skills-icons" src="../assets/html-5.png" />
-              <img class="skills-icons" src="../assets/css-3.png" />
-              <img class="skills-icons" src="../assets/vue.png" />
-            </template>
-          </ProjectFrames>
-        </Transition>
-        <Transition name="fade">
-          <ProjectFrames v-if="showTransitionProjectThree">
-            <template #title>Miniclip's Knowledge Base</template>
-            <template #image
-              ><img
-                src="../assets/projects/MiniclipKB.png"
-                class="project-imgs"
-            /></template>
-            <template #description>
-              As part of my training, I had the chance to practice solid basics
-              of HTML, CSS and JavaScript while completely revamping the support
-              website for Miniclip</template
-            >
-            <template #skills>
-              <img class="skills-icons" src="../assets/html-5.png" />
-              <img class="skills-icons" src="../assets/css-3.png" />
-              <img class="skills-icons" src="../assets/js.png" />
-            </template>
-          </ProjectFrames>
-        </Transition>
-        <Transition name="fade">
-          <ProjectFrames v-if="showTransitionProjectFour">
-            <template #title>Basketball Scoreboard</template>
-            <template #image
-              ><img
-                src="../assets/projects/BasketballScoreboard.png"
-                class="project-imgs"
-            /></template>
-            <template #description>
-              As part of a Scrimba course, I developed extra features on a
-              Basketball scoreboard app, allowing me to practice CSS grid and
-              flex concepts in the process</template
-            >
-            <template #skills>
-              <img class="skills-icons" src="../assets/html-5.png" />
-              <img class="skills-icons" src="../assets/css-3.png" />
-              <img class="skills-icons" src="../assets/js.png" />
-            </template>
-          </ProjectFrames>
-        </Transition>
+        <a
+          href="https://courageous-paletas-8356a0.netlify.app/"
+          target="_blank"
+        >
+          <Transition name="fade">
+            <ProjectFrames v-if="showTransitionProjectOne">
+              <template #title>Password Generator</template>
+              <template #image
+                ><img
+                  src="../assets/projects/PasswordGenerator.png"
+                  class="project-imgs"
+              /></template>
+              <template #description>
+                In this project I had the opportunity to practice Vue 3 by
+                building a useful Password Generator</template
+              >
+              <template #skills>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/vue.png" />
+              </template>
+            </ProjectFrames>
+          </Transition>
+        </a>
+        <a href="https://magenta-melba-71e7bd.netlify.app/" target="_blank">
+          <Transition name="fade">
+            <ProjectFrames v-if="showTransitionProjectTwo">
+              <template #title>To do app</template>
+              <template #image
+                ><img
+                  src="../assets/projects/ToDoList.png"
+                  class="project-imgs"
+              /></template>
+              <template #description>
+                As my first Vue 3 project, I developed a simple to do app that
+                allows users to add, remove and filter through priority list
+                tasks</template
+              >
+              <template #skills>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/vue.png" />
+              </template>
+            </ProjectFrames>
+          </Transition>
+        </a>
+        <a href="https://support.miniclip.com/hc/en-us" target="_blank">
+          <Transition name="fade">
+            <ProjectFrames v-if="showTransitionProjectThree">
+              <template #title>Miniclip's Knowledge Base</template>
+              <template #image
+                ><img
+                  src="../assets/projects/MiniclipKB.png"
+                  class="project-imgs"
+              /></template>
+              <template #description>
+                As part of my training, I had the chance to practice solid
+                basics of HTML, CSS and JavaScript while completely revamping
+                the support website for Miniclip</template
+              >
+              <template #skills>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/js.png" />
+              </template>
+            </ProjectFrames>
+          </Transition>
+        </a>
+        <a href="https://basketball-scoreboard-cm.netlify.app/" target="_blank">
+          <Transition name="fade">
+            <ProjectFrames v-if="showTransitionProjectFour">
+              <template #title>Basketball Scoreboard</template>
+              <template #image
+                ><img
+                  src="../assets/projects/BasketballScoreboard.png"
+                  class="project-imgs"
+              /></template>
+              <template #description>
+                As part of a Scrimba course, I developed extra features on a
+                Basketball scoreboard app, allowing me to practice CSS grid and
+                flex concepts in the process</template
+              >
+              <template #skills>
+                <img class="skills-icons" src="../assets/html-5.png" />
+                <img class="skills-icons" src="../assets/css-3.png" />
+                <img class="skills-icons" src="../assets/js.png" />
+              </template>
+            </ProjectFrames>
+          </Transition>
+        </a>
       </div>
     </div>
   </main>
@@ -198,5 +211,10 @@ h2,
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 </style>
