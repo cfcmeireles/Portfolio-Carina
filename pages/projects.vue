@@ -14,94 +14,81 @@
       </p>
       <div class="project-preview">
         <Transition name="fade">
-          <div class="project-one" v-if="showTransitionProjectOne">
-            <a
-              href="http://courageous-paletas-8356a0.netlify.app/"
-              target="_blank"
-            >
-              <h2>Password Generator</h2>
-              <img
+          <ProjectFrames v-if="showTransitionProjectOne">
+            <template #title>Password Generator</template>
+            <template #image
+              ><img
                 src="../assets/projects/PasswordGenerator.png"
                 class="project-imgs"
-              />
-              <p>
-                In this project I had the opportunity to practice Vue 3 by
-                building a useful Password Generator
-              </p>
-              <div class="skills-bar">
-                <p>Skills used:</p>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/vue.png" />
-              </div>
-            </a>
-          </div>
-        </Transition>
-        <Transition name="fade">
-          <div class="project-two" v-if="showTransitionProjectTwo">
-            <a href="http://magenta-melba-71e7bd.netlify.app" target="_blank">
-              <h2>To do app</h2>
-              <img src="../assets/projects/ToDoList.png" class="project-imgs" />
-              <p>
-                As my first Vue 3 project, I developed a simple to do app that
-                allows users to add, remove and filter through priority list
-                tasks
-              </p>
-              <div class="skills-bar">
-                <p>Skills used:</p>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/vue.png" />
-              </div>
-            </a>
-          </div>
-        </Transition>
-        <Transition name="fade">
-          <div class="project-three" v-if="showTransitionProjectThree">
-            <a href="https://support.miniclip.com/hc/en-us" target="_blank">
-              <h2>Miniclip's Knowledge Base</h2>
-              <img
-                class="project-imgs"
-                src="../assets/projects/MiniclipKB.png"
-              />
-              <p>
-                As part of my training, I had the chance to practice solid
-                basics of HTML, CSS and JavaScript while completely revamping
-                the support website for Miniclip
-              </p>
-              <div class="skills-bar">
-                <p>Skills used:</p>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/js.png" />
-              </div>
-            </a>
-          </div>
-        </Transition>
-        <Transition name="fade">
-          <div class="project-four" v-if="showTransitionProjectFour">
-            <a
-              href="http://basketball-scoreboard-cm.netlify.app"
-              target="_blank"
+            /></template>
+            <template #description>
+              In this project I had the opportunity to practice Vue 3 by
+              building a useful Password Generator</template
             >
-              <h2>Basketball Scoreboard</h2>
-              <img
+            <template #skills>
+              <img class="skills-icons" src="../assets/html-5.png" />
+              <img class="skills-icons" src="../assets/css-3.png" />
+              <img class="skills-icons" src="../assets/vue.png" />
+            </template>
+          </ProjectFrames>
+        </Transition>
+        <Transition name="fade">
+          <ProjectFrames v-if="showTransitionProjectTwo">
+            <template #title>To do app</template>
+            <template #image
+              ><img src="../assets/projects/ToDoList.png" class="project-imgs"
+            /></template>
+            <template #description>
+              As my first Vue 3 project, I developed a simple to do app that
+              allows users to add, remove and filter through priority list
+              tasks</template
+            >
+            <template #skills>
+              <img class="skills-icons" src="../assets/html-5.png" />
+              <img class="skills-icons" src="../assets/css-3.png" />
+              <img class="skills-icons" src="../assets/vue.png" />
+            </template>
+          </ProjectFrames>
+        </Transition>
+        <Transition name="fade">
+          <ProjectFrames v-if="showTransitionProjectThree">
+            <template #title>Miniclip's Knowledge Base</template>
+            <template #image
+              ><img
+                src="../assets/projects/MiniclipKB.png"
+                class="project-imgs"
+            /></template>
+            <template #description>
+              As part of my training, I had the chance to practice solid basics
+              of HTML, CSS and JavaScript while completely revamping the support
+              website for Miniclip</template
+            >
+            <template #skills>
+              <img class="skills-icons" src="../assets/html-5.png" />
+              <img class="skills-icons" src="../assets/css-3.png" />
+              <img class="skills-icons" src="../assets/js.png" />
+            </template>
+          </ProjectFrames>
+        </Transition>
+        <Transition name="fade">
+          <ProjectFrames v-if="showTransitionProjectFour">
+            <template #title>Basketball Scoreboard</template>
+            <template #image
+              ><img
                 src="../assets/projects/BasketballScoreboard.png"
                 class="project-imgs"
-              />
-              <p>
-                As part of a Scrimba course, I developed extra features on a
-                Basketball scoreboard app, allowing me to practice CSS grid and
-                flex concepts in the process
-              </p>
-              <div class="skills-bar">
-                <p>Skills used:</p>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/js.png" />
-              </div>
-            </a>
-          </div>
+            /></template>
+            <template #description>
+              As part of a Scrimba course, I developed extra features on a
+              Basketball scoreboard app, allowing me to practice CSS grid and
+              flex concepts in the process</template
+            >
+            <template #skills>
+              <img class="skills-icons" src="../assets/html-5.png" />
+              <img class="skills-icons" src="../assets/css-3.png" />
+              <img class="skills-icons" src="../assets/js.png" />
+            </template>
+          </ProjectFrames>
         </Transition>
       </div>
     </div>
@@ -109,7 +96,9 @@
 </template>
     
 <script>
+import ProjectFrames from "~/components/ProjectFrames.vue";
 export default {
+  ProjectFrames,
   data() {
     return {
       showTransitionProjectOne: false,
@@ -145,20 +134,12 @@ export default {
 
 .projects {
   text-align: center;
+  margin-bottom: 100px;
 }
 .project-preview {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media only screen and (max-width: 1650px) {
-  .project-one,
-  .project-two,
-  .project-three,
-  .project-four {
-    margin-bottom: 20px;
-  }
 }
 
 @media only screen and (min-width: 1650px) {
@@ -174,19 +155,6 @@ export default {
     column-gap: 5%;
     row-gap: 5%;
   }
-
-  .project-one:hover,
-  .project-two:hover,
-  .project-three:hover,
-  .project-four:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 0.5s;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.projects {
-  margin-bottom: 100px;
 }
 
 /* img {
@@ -194,34 +162,6 @@ export default {
   width: 100%;
 } */
 
-.project-one,
-.project-two,
-.project-three,
-.project-four {
-  /* height: 900px;
-  width: 750px; */
-  /* margin-bottom: 150px; */
-  /* display: flex; */
-  /* max-width: 100%; */
-  max-width: 600px;
-  border: 1px solid black;
-  border-radius: 15px;
-  background-color: lightgrey;
-  max-height: 100%;
-  cursor: pointer;
-  transition: transform 0.3s, margin 0.3s;
-}
-/* .project-one:hover,
-.project-two:hover {
-  margin-top: 40px;
-} */
-
-.project-one p,
-.project-two p,
-.project-three p,
-.project-four p {
-  color: black;
-}
 .project-imgs {
   width: 100%;
   height: 100%;
@@ -258,10 +198,5 @@ h2,
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 </style>
