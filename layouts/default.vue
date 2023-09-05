@@ -2,11 +2,7 @@
   <div class="layout">
     <div class="nav-bars">
       <HamburgerMenu />
-      <NavBar
-        @routeChanged="handleClassChanged"
-        :nameBar="currentClassName"
-        :showNameBar="showNameBar"
-      />
+      <NavBar @routeChanged="handleClassChanged" :showNameBar="showNameBar" />
     </div>
     <div class="main-content">
       <slot />
@@ -18,10 +14,10 @@
 export default {
   mounted() {
     document.body.classList.add("gradient-body");
+    this.handleClassChanged();
   },
   data() {
     return {
-      currentClassName: "name-bar",
       showNameBar: true,
     };
   },
@@ -30,12 +26,10 @@ export default {
       if (this.$route.path !== "/") {
         (this.showNameBar = false),
           setTimeout(() => {
-            this.currentClassName = "name-bar active";
             this.showNameBar = true;
           }, 1000);
       } else {
         this.showNameBar = false;
-        this.currentClassName = "name-bar";
       }
     },
   },

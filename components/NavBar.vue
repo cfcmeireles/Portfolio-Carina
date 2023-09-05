@@ -26,7 +26,10 @@
         <div class="line"></div>
       </div>
     </ul>
-    <div :class="nameBar" v-if="showNameBar">
+    <div
+      :class="[showWithFade ? 'name-bar active' : 'name-bar']"
+      v-if="showNameBar"
+    >
       <p style="font-size: 13px">Hire me</p>
       <p style="font-size: 13px">carinacmeireles@gmail.com</p>
       <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
@@ -53,9 +56,7 @@
 <script>
 export default {
   props: {
-    nameBar: {
-      type: String,
-    },
+    showWithFade: Boolean,
     showNameBar: {
       type: Boolean,
       required: true,
@@ -65,6 +66,11 @@ export default {
     $route() {
       this.$emit("routeChanged");
     },
+  },
+  data() {
+    return {
+      showWithFade: true,
+    };
   },
 };
 </script>
