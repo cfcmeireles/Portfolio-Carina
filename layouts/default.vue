@@ -18,17 +18,20 @@ export default {
   },
   data() {
     return {
+      timeOut: null,
       showNameBar: true,
     };
   },
   methods: {
     handleClassChanged() {
+      const timeOutFunction = () => {
+        this.showNameBar = true;
+      };
       if (this.$route.path !== "/") {
         (this.showNameBar = false),
-          setTimeout(() => {
-            this.showNameBar = true;
-          }, 1000);
+          (this.timeOut = setTimeout(timeOutFunction, 1000));
       } else {
+        clearTimeout(this.timeOut);
         this.showNameBar = false;
       }
     },
