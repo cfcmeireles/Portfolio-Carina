@@ -4,7 +4,7 @@
       <HamburgerMenu />
       <NavBar @routeChanged="handleClassChanged" :showNameBar="showNameBar" />
     </div>
-    <div class="main-content">
+    <div>
       <slot />
     </div>
   </div>
@@ -13,7 +13,6 @@
 <script>
 export default {
   mounted() {
-    document.body.classList.add("gradient-body");
     this.handleClassChanged();
   },
   data() {
@@ -41,13 +40,6 @@ export default {
 
 
 <style>
-.gradient-body {
-  background: linear-gradient(-45deg, #46a29f, #202833);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-}
-
 @media only screen and (min-width: 950px) {
   .layout {
     display: grid;

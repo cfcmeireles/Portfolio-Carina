@@ -1,20 +1,22 @@
 <template>
-  <main id="projects-page">
-    <div class="projects">
-      <h1 class="section-titles">Projects</h1>
-      <p>
+  <main class="flex content-center justify-center">
+    <div class="text-center mb-24">
+      <h1 class="text-lightblue text-4xl font-mono my-5">Projects</h1>
+      <p class="my-4 font-rubik">
         In this section you will find some of the projects I've worked on, for
         more, you can also check my
         <NuxtLink
-          class="github-link"
+          class="text-lightblue"
           to="https://github.com/cfcmeireles"
           target="_blank"
           >GitHub page</NuxtLink
         >
       </p>
-      <div class="project-preview">
+      <div
+        class="flex flex-col items-center lg:grid grid-cols-2 flex-wrap justify-center items-start gap-x-14 gap-y-14"
+      >
         <a
-          href="https://courageous-paletas-8356a0.netlify.app/"
+          href="https://github.com/cfcmeireles/Password-generator"
           target="_blank"
         >
           <Transition name="fade">
@@ -23,28 +25,28 @@
               <template #image
                 ><img
                   src="../assets/projects/PasswordGenerator.png"
-                  class="project-imgs"
+                  class="w-full h-full"
               /></template>
               <template #description>
                 In this project I had the opportunity to practice Vue 3 by
                 building a useful Password Generator</template
               >
               <template #skills>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/vue.png" />
+                <img class="w-8 h-8" src="../assets/html-5.png" />
+                <img class="w-8 h-8" src="../assets/css-3.png" />
+                <img class="w-8 h-8" src="../assets/vue.png" />
               </template>
             </ProjectFrames>
           </Transition>
         </a>
-        <a href="https://magenta-melba-71e7bd.netlify.app/" target="_blank">
+        <a href="https://github.com/cfcmeireles/to-do-app" target="_blank">
           <Transition name="fade">
             <ProjectFrames v-if="showTransitionProjectTwo">
               <template #title>To do app</template>
               <template #image
                 ><img
                   src="../assets/projects/ToDoList.png"
-                  class="project-imgs"
+                  class="w-full h-full"
               /></template>
               <template #description>
                 As my first Vue 3 project, I developed a simple to do app that
@@ -52,9 +54,9 @@
                 tasks</template
               >
               <template #skills>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/vue.png" />
+                <img class="w-8 h-8" src="../assets/html-5.png" />
+                <img class="w-8 h-8" src="../assets/css-3.png" />
+                <img class="w-8 h-8" src="../assets/vue.png" />
               </template>
             </ProjectFrames>
           </Transition>
@@ -66,7 +68,7 @@
               <template #image
                 ><img
                   src="../assets/projects/MiniclipKB.png"
-                  class="project-imgs"
+                  class="w-full h-full"
               /></template>
               <template #description>
                 As part of my training, I had the chance to practice solid
@@ -74,21 +76,24 @@
                 the support website for Miniclip</template
               >
               <template #skills>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/js.png" />
+                <img class="w-8 h-8" src="../assets/html-5.png" />
+                <img class="w-8 h-8" src="../assets/css-3.png" />
+                <img class="w-8 h-8" src="../assets/js.png" />
               </template>
             </ProjectFrames>
           </Transition>
         </a>
-        <a href="https://basketball-scoreboard-cm.netlify.app/" target="_blank">
+        <a
+          href="https://github.com/cfcmeireles/Basketball-Scoreboard"
+          target="_blank"
+        >
           <Transition name="fade">
             <ProjectFrames v-if="showTransitionProjectFour">
               <template #title>Basketball Scoreboard</template>
               <template #image
                 ><img
                   src="../assets/projects/BasketballScoreboard.png"
-                  class="project-imgs"
+                  class="w-full h-full"
               /></template>
               <template #description>
                 As part of a Scrimba course, I developed extra features on a
@@ -96,9 +101,9 @@
                 flex concepts in the process</template
               >
               <template #skills>
-                <img class="skills-icons" src="../assets/html-5.png" />
-                <img class="skills-icons" src="../assets/css-3.png" />
-                <img class="skills-icons" src="../assets/js.png" />
+                <img class="w-8 h-8" src="../assets/html-5.png" />
+                <img class="w-8 h-8" src="../assets/css-3.png" />
+                <img class="w-8 h-8" src="../assets/js.png" />
               </template>
             </ProjectFrames>
           </Transition>
@@ -121,6 +126,7 @@ export default {
     };
   },
   mounted() {
+    document.body.classList.remove("gradient-body");
     this.showTransitionProjectOne = true;
     setTimeout(() => {
       this.showTransitionProjectTwo = true;
@@ -136,71 +142,8 @@ export default {
 </script>
     
 <style scoped>
-#projects-page {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-.github-link {
-  text-decoration: none;
-}
-
-.projects {
-  text-align: center;
-  margin-bottom: 100px;
-}
-.project-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media only screen and (min-width: 1650px) {
-  .project-preview {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* flex-direction: column; */
-    /* columns: 2; */
-    flex-wrap: wrap;
-    /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); */
-    justify-content: center;
-    align-items: flex-start;
-    column-gap: 5%;
-    row-gap: 5%;
-  }
-}
-
-/* img {
-  height: 300px;
-  width: 100%;
-} */
-
-.project-imgs {
-  width: 100%;
-  height: 100%;
-}
-
-.skills-bar {
-  display: flex;
-  border: 1px solid lightgray;
-  border-radius: 15px;
-  background: grey;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-icons {
-  width: 10%;
-  height: 10%;
-}
-
-h2,
-.project-preview p {
-  text-align: center;
+body {
+  background: #202833;
 }
 
 .fade-enter-active,
@@ -211,10 +154,5 @@ h2,
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 </style>

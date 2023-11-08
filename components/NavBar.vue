@@ -1,6 +1,6 @@
 <template>
   <nav id="nav-bar">
-    <ul class="nav-items">
+    <ul class="nav-items pl-10 my-4">
       <div class="nav-item">
         <NuxtLink to="/" style="text-decoration: none; color: black">
           <li>HOME</li></NuxtLink
@@ -166,12 +166,4 @@ export default {
 .linkedin-icon {
   width: 30px;
 }
-
-/* .fade-enter-active {
-  transition: opacity 1.5s ease-in-out;
-}
-
-.fade-enter-from {
-  opacity: 0;
-} */
 </style>

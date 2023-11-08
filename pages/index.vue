@@ -1,33 +1,35 @@
 <template>
-  <main id="home-page">
-    <div class="home">
+  <main class="h-screen flex items-center justify-center">
+    <div class="text-center" style="height: 50vh">
       <transition name="fade">
-        <img class="photo" v-if="showPhoto" src="../assets/kina_avatar.png" />
+        <img class="w-52" v-if="showPhoto" src="../assets/kina_avatar.png" />
       </transition>
 
       <transition name="fade">
-        <h1 class="fullname" v-if="showName">CARINA MEIRELES</h1>
+        <h1 class="font-mulish text-lightblue text-4xl my-2.5" v-if="showName">
+          CARINA MEIRELES
+        </h1>
       </transition>
       <VueWriter
         v-if="showText"
         :array="['I am an aspiring developer based in Lisbon, Portugal']"
         :iterations="1"
         :typeSpeed="50"
-        class="writer-text"
+        class="text-sm leading-8 text-white font-mono"
       />
       <VueWriter
         v-if="showText2"
         :array="['Currently employed by Miniclip']"
         :iterations="1"
         :typeSpeed="50"
-        class="writer-text"
+        class="text-sm leading-8 text-white font-mono"
       />
       <transition name="fadeIn">
         <div v-if="showIcons">
           <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
             <img
               src="../assets/github-logo.png"
-              class="github-icon"
+              class="h-10 pr-2.5 mt-2.5"
               alt="GitHub Logo"
             />
           </NuxtLink>
@@ -37,7 +39,7 @@
           >
             <img
               src="../assets/linkedin-logo.png"
-              class="linkedin-icon"
+              class="h-10"
               alt="Linkedin Logo"
             />
           </NuxtLink>
@@ -62,6 +64,7 @@ export default {
     };
   },
   mounted() {
+    document.body.classList.add("gradient-body");
     this.showPhoto = true;
     this.showName = true;
     setTimeout(() => {
@@ -77,45 +80,16 @@ export default {
 };
 </script>
 
-<style scoped>
-#home-page {
+<style>
+@import "../tailwind.css";
+
+.gradient-body {
+  background: linear-gradient(-45deg, #46a29f, #202833);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.home {
-  text-align: center;
-  /* height: 490px; */
-  height: 50vh;
-}
-
-h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.photo {
-  width: 200px;
-  /* border: 5px solid #66fcf1; */
-}
-
-.writer-text {
-  font-size: 0.9em;
-  line-height: 2em;
-  color: white;
-  font-family: "Space Mono", monospace;
-}
-
-.github-icon {
-  /* width: 2.5%; */
-  height: 40px;
-  padding-right: 10px;
-  margin-top: 10px;
-}
-.linkedin-icon {
-  height: 40px;
-}
 .fade-enter-active {
   animation: fadeIn 2s;
 }
@@ -140,22 +114,6 @@ h1 {
     transform: translateY(0);
   }
 }
-/* 
-.typewriter-enter-active {
-  animation: typewriter 2s steps(40);
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-} */
-
 .fadeIn-enter-active {
   transition: opacity 1.5s ease-in-out;
 }

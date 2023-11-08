@@ -1,52 +1,49 @@
 <template>
-  <main id="contacts-page">
+  <main class="flex items-center justify-center h-screen">
     <div class="contacts">
-      <h1 class="section-titles">Contact me</h1>
+      <h1 class="text-lightblue text-4xl font-mono my-5">Contact me</h1>
       <form>
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name" />
+        <input
+          class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
+          type="text"
+          id="name"
+          placeholder="Your name"
+        />
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Your email" />
+        <input
+          class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
+          type="text"
+          id="email"
+          placeholder="Your email"
+        />
         <label for="subject">Subject</label>
-        <textarea id="subject" placeholder="Write here"></textarea>
-        <input type="submit" value="Submit" @click.prevent="mailto" />
+        <textarea
+          class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
+          id="subject"
+          placeholder="Write here"
+        ></textarea>
+        <input
+          class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500"
+          type="submit"
+          value="Submit"
+          @click.prevent="mailto"
+        />
       </form>
     </div>
   </main>
 </template>
     
 <script>
+export default {
+  mounted() {
+    document.body.classList.remove("gradient-body");
+  },
+};
 </script>
     
     <style>
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+body {
+  font-family: "Rubik", sans-serif;
 }
-
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-/* .contacts {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 50px;
-} */
 </style>
