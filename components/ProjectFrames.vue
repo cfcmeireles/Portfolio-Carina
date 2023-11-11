@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-xl rounded-2xl max-h-full bg-gray-100 transition-transform duration-300 transition-margin duration-300 transform scale-100 lg: hover:scale-110 transition-transform duration-500 ease-in-out shadow-md"
+    class="max-w-xl rounded-2xl max-h-full bg-gray-100 transition-transform duration-300 transition-margin duration-300 transform scale-100 lg:hover:scale-105 transition-transform duration-500 ease-in-out shadow-md"
   >
     <h2 class="text-2xl font-bold my-3 py-5 font-rubik">
       <slot name="title"></slot>
