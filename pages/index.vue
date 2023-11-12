@@ -28,8 +28,8 @@
         <div v-if="showIcons">
           <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
             <img
-              src="../assets/github-logo.png"
-              class="h-10 pr-2.5 mt-2.5"
+              src="../assets/github-icon.svg"
+              class="pr-2.5 mt-2.5"
               alt="GitHub Logo"
             />
           </NuxtLink>
@@ -37,11 +37,7 @@
             to="https://www.linkedin.com/in/carina-meireles/"
             target="_blank"
           >
-            <img
-              src="../assets/linkedin-logo.png"
-              class="h-10"
-              alt="Linkedin Logo"
-            />
+            <img src="../assets/linkedin-icon.svg" alt="Linkedin Logo" />
           </NuxtLink>
         </div>
       </transition>

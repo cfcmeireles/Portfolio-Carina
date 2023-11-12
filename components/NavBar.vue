@@ -39,17 +39,17 @@
         :class="[showWithFade ? 'name-bar active' : 'name-bar']"
         v-if="showNameBar"
       >
-        <p style="font-size: 13px">Hire me</p>
-        <p style="font-size: 13px">carinacmeireles@gmail.com</p>
+        <p class="text-sm">Hire me</p>
+        <p class="text-sm">carinacmeireles@gmail.com</p>
         <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
-          <img src="../assets/github-logo.png" class="w-8" alt="GitHub Logo" />
+          <img src="../assets/github-icon.svg" class="w-8" alt="GitHub Logo" />
         </NuxtLink>
         <NuxtLink
           to="https://www.linkedin.com/in/carina-meireles/"
           target="_blank"
         >
           <img
-            src="../assets/linkedin-logo.png"
+            src="../assets/linkedin-icon.svg"
             class="w-8"
             alt="Linkedin Logo"
           />
