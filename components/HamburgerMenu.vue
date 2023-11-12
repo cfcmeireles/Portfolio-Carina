@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-500 block w-full h-16 m-0 absolute top-0 left-0 md:hidden lg:hidden"
+    class="bg-gray-500 block w-full h-16 m-0 fixed top-0 left-0 md:hidden lg:hidden"
   >
     <nav
       class="hamburger-menu bg-gray-500 block absolute top-5"
