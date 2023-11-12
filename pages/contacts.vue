@@ -22,12 +22,8 @@
             placeholder="Write here"
             type="textarea"
           />
+          <FormInput type="submit" />
         </form>
-        <input
-          class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500"
-          type="submit"
-          value="Submit"
-        />
       </div>
     </main>
   </body>
