@@ -1,35 +1,33 @@
 <template>
   <body class="bg-darkblue font-rubik">
     <main class="flex items-center justify-center h-screen">
-      <div class="contacts">
+      <div>
         <h1 class="text-lightblue text-4xl font-mono my-5">Contact me</h1>
         <form>
-          <label for="name">Name</label>
-          <input
-            class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
-            type="text"
+          <FormInput
             id="name"
+            label="Name"
             placeholder="Your name"
-          />
-          <label for="email">Email</label>
-          <input
-            class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
             type="text"
-            id="email"
-            placeholder="Your email"
           />
-          <label for="subject">Subject</label>
-          <textarea
-            class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
+          <FormInput
+            id="email"
+            label="Email"
+            placeholder="Your email"
+            type="email"
+          />
+          <FormInput
             id="subject"
+            label="Subject"
             placeholder="Write here"
-          ></textarea>
-          <input
-            class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500"
-            type="submit"
-            value="Submit"
+            type="textarea"
           />
         </form>
+        <input
+          class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500"
+          type="submit"
+          value="Submit"
+        />
       </div>
     </main>
   </body>
