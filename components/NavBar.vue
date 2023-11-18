@@ -1,7 +1,7 @@
 <template>
   <body class="bg-darkblue">
     <nav
-      class="hidden md:block md:fixed md:left-0 md:h-full lg:block lg:fixed lg:left-0 lg:h-full"
+      class="hidden md:fixed md:left-0 md:h-full lg:block lg:fixed lg:left-0 lg:h-full"
     >
       <ul class="pl-10 my-4 list-none h-full flex justify-center flex-col">
         <div class="nav-item pb-12">
@@ -107,13 +107,12 @@ export default {
 }
 
 .line {
-  border-top: 1px #66fcf1;
   transition: transform 0.3s ease-in-out;
 }
 
 .line::before {
   content: "";
   display: block;
-  border-top: 1px solid black;
+  border-top: 1px solid #66fcf1;
 }
 </style>
