@@ -1,6 +1,6 @@
 <template>
   <main class="h-screen flex items-center justify-center">
-    <div class="text-center" style="height: 50vh">
+    <div class="text-center" style="height: 500px">
       <transition name="fade">
         <img class="w-52" v-if="showPhoto" src="../assets/kina_avatar.png" />
       </transition>

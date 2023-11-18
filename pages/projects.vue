@@ -1,6 +1,6 @@
 <template>
   <body class="bg-darkblue">
-    <main class="flex content-center justify-center">
+    <main class="h-full flex items-center justify-center">
       <div class="text-center mb-24">
         <h1 class="text-lightblue text-4xl font-mono my-5">Projects</h1>
         <p class="my-4 font-rubik">
@@ -14,7 +14,7 @@
           >
         </p>
         <div
-          class="flex flex-col items-center lg:grid grid-cols-2 flex-wrap justify-center items-start gap-x-14 gap-y-14"
+          class="flex flex-col items-center lg:grid lg:grid-cols-2 lg:flex-wrap lg:justify-center lg:items-start lg:gap-x-14 lg:gap-y-14"
         >
           <a
             href="https://github.com/cfcmeireles/Password-generator"
