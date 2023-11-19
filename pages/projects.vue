@@ -23,7 +23,10 @@
             target="_blank"
           >
             <Transition name="fade">
-              <ProjectFrames v-if="showTransitionProjectOne">
+              <ProjectFrames
+                :skills="{ html: true, css: true, vue: true }"
+                v-if="showTransitionProjectOne"
+              >
                 <template #title>Password Generator</template>
                 <template #image
                   ><img
@@ -34,17 +37,15 @@
                   In this project I had the opportunity to practice Vue 3 by
                   building a useful Password Generator</template
                 >
-                <template #skills>
-                  <img class="w-8 h-8" src="../assets/html-5.png" />
-                  <img class="w-8 h-8" src="../assets/css-3.png" />
-                  <img class="w-8 h-8" src="../assets/vue.png" />
-                </template>
               </ProjectFrames>
             </Transition>
           </a>
           <a href="https://github.com/cfcmeireles/to-do-app" target="_blank">
             <Transition name="fade">
-              <ProjectFrames v-if="showTransitionProjectTwo">
+              <ProjectFrames
+                :skills="{ html: true, css: true, vue: true }"
+                v-if="showTransitionProjectTwo"
+              >
                 <template #title>To do app</template>
                 <template #image
                   ><img
@@ -56,17 +57,15 @@
                   allows users to add, remove and filter through priority list
                   tasks</template
                 >
-                <template #skills>
-                  <img class="w-8 h-8" src="../assets/html-5.png" />
-                  <img class="w-8 h-8" src="../assets/css-3.png" />
-                  <img class="w-8 h-8" src="../assets/vue.png" />
-                </template>
               </ProjectFrames>
             </Transition>
           </a>
           <a href="https://support.miniclip.com/hc/en-us" target="_blank">
             <Transition name="fade">
-              <ProjectFrames v-if="showTransitionProjectThree">
+              <ProjectFrames
+                :skills="{ html: true, css: true, js: true }"
+                v-if="showTransitionProjectThree"
+              >
                 <template #title>Miniclip's Knowledge Base</template>
                 <template #image
                   ><img
@@ -78,11 +77,6 @@
                   basics of HTML, CSS and JavaScript while completely revamping
                   the support website for Miniclip</template
                 >
-                <template #skills>
-                  <img class="w-8 h-8" src="../assets/html-5.png" />
-                  <img class="w-8 h-8" src="../assets/css-3.png" />
-                  <img class="w-8 h-8" src="../assets/js.png" />
-                </template>
               </ProjectFrames>
             </Transition>
           </a>
@@ -91,7 +85,10 @@
             target="_blank"
           >
             <Transition name="fade">
-              <ProjectFrames v-if="showTransitionProjectFour">
+              <ProjectFrames
+                :skills="{ html: true, css: true, js: true }"
+                v-if="showTransitionProjectFour"
+              >
                 <template #title>Basketball Scoreboard</template>
                 <template #image
                   ><img
@@ -103,11 +100,6 @@
                   Basketball scoreboard app, allowing me to practice CSS grid
                   and flex concepts in the process</template
                 >
-                <template #skills>
-                  <img class="w-8 h-8" src="../assets/html-5.png" />
-                  <img class="w-8 h-8" src="../assets/css-3.png" />
-                  <img class="w-8 h-8" src="../assets/js.png" />
-                </template>
               </ProjectFrames>
             </Transition>
           </a>

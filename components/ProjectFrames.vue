@@ -10,7 +10,26 @@
       <slot name="description"></slot>
     </p>
     <div class="flex mx-auto mb-5 py-5 items-center justify-center">
-      <slot name="skills"></slot>
+      <img class="w-8 h-8" src="../assets/html-5.png" v-if="skills.html" />
+      <img class="w-8 h-8" src="../assets/css-3.png" v-if="skills.css" />
+      <img class="w-8 h-8" src="../assets/js.png" v-if="skills.js" />
+      <img class="w-8 h-8" src="../assets/vue.png" v-if="skills.vue" />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    skills: {
+      type: Object,
+      default: () => ({
+        html: false,
+        css: false,
+        js: false,
+        vue: false,
+      }),
+    },
+  },
+};
+</script>
