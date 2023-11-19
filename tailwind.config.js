@@ -1,9 +1,9 @@
 module.exports = {
   theme: {
     screens: {
-      sm: "640px",
-      md: "950px",
-      lg: "1650px",
+      sm: "576px",
+      md: "768px",
+      lg: "1024px",
     },
     fontFamily: {
       mono: ["Space Mono", "monospace"],

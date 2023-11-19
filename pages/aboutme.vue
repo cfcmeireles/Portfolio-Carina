@@ -4,21 +4,21 @@
       <div class="m-20">
         <h1 class="text-lightblue text-4xl font-mono my-5">About me</h1>
         <div
-          class="flex flex-col w-screen md:max-w-screen-sm lg:max-w-full lg:w-full lg:grid"
-          style="grid-template-columns: 700px 700px"
+          class="flex flex-col w-screen sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid"
+          style="grid-template-columns: repeat(auto-fill, minmax(900px, 1fr))"
         >
           <div>
             <h2 class="text-xl lg:text-2xl my-5 text-white">
               Hi, I'm <strong>Carina</strong>
             </h2>
             <p
-              class="text-sm md:text-base lg:text-lg leading-normal font-rubik"
+              class="text-sm md:text-base lg:text-lg sm:!leading-loose md:!leading-loose lg:!leading-loose font-rubik"
             >
               I'm an aspiring Web Developer with 1 year of learning experience.
               I'm from Lisbon and I love technology and gaming.
             </p>
             <p
-              class="text-sm md:text-base lg:text-lg leading-normal font-rubik"
+              class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
               My goal is to develop interactive, responsive software that
               seamlessly engages users and adapts to their needs, while
@@ -32,7 +32,7 @@
               What is my skill level?
             </h2>
             <p
-              class="text-sm md:text-base lg:text-lg leading-normal font-rubik"
+              class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
               repudiandae voluptas tenetur veritatis officiis reprehenderit
@@ -42,7 +42,7 @@
               dolore.
             </p>
             <p
-              class="text-sm md:text-base lg:text-lg leading-normal font-rubik"
+              class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
               At the moment, I am still building a solid foundation in Front-end
               development.
@@ -53,20 +53,20 @@
           My current tech stack:
         </h3>
         <div
-          class="w-screen flex flex-wrap md:w-full lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
+          class="flex flex-wrap md:w-full lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
           style="row-gap: 70px; grid-template-columns: 300px 300px 300px"
         >
-          <img class="h-16 flex mx-auto" src="../assets/html-5.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/html-5.png" />
 
-          <img class="h-16 flex mx-auto" src="../assets/css-3.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/css-3.png" />
 
-          <img class="h-16 flex mx-auto" src="../assets/tailwind.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/tailwind.png" />
 
-          <img class="h-16 flex mx-auto" src="../assets/js.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/js.png" />
 
-          <img class="h-16 flex mx-auto" src="../assets/vue.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/vue.png" />
 
-          <img class="h-16 flex mx-auto" src="../assets/nuxt-3.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/nuxt-3.png" />
         </div>
       </div>
     </main>

@@ -16,7 +16,7 @@
           >
         </p>
         <div
-          class="flex flex-col items-center lg:grid lg:grid-cols-2 lg:flex-wrap lg:justify-center lg:items-start lg:gap-x-14 lg:gap-y-14"
+          class="project-frame flex flex-col items-center lg:grid lg:grid-cols-2 lg:flex-wrap lg:justify-center lg:items-start lg:gap-x-14 lg:gap-y-14"
         >
           <a
             href="https://github.com/cfcmeireles/Password-generator"
@@ -154,5 +154,13 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+@media (max-width: 1400px) {
+  .project-frame {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 </style>
