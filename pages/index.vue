@@ -51,7 +51,6 @@ export default {
   components: { VueWriter },
   data() {
     return {
-      arr: "hello",
       showPhoto: false,
       showName: false,
       showText: false,

@@ -1,6 +1,8 @@
 <template>
   <div
-    class="max-w-xl rounded-2xl max-h-full bg-gray-100 lg:hover:scale-105 lg:hover:duration-500 lg:hover:ease-in-out lg:hover:shadow-md"
+    class="max-w-xl rounded-2xl max-h-full bg-gray-100"
+    :class="isPageLoaded ? 'active' : ''"
+    @readyForHover="readyForHover"
   >
     <h2 class="text-xl lg:text-2xl font-bold my-3 py-5 font-rubik">
       <slot name="title"></slot>
@@ -20,6 +22,14 @@
 
 <script>
 export default {
+  data() {
+    return {
+      isPageLoaded: false,
+    };
+  },
+  mounted() {
+    this.readyForHover();
+  },
   props: {
     skills: {
       type: Object,
@@ -31,5 +41,32 @@ export default {
       }),
     },
   },
+  methods: {
+    readyForHover() {
+      setTimeout(() => {
+        this.isPageLoaded = true;
+      }, 3000);
+    },
+  },
 };
 </script>
+
+<style>
+@media (min-width: 1024px) {
+  .active:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+      0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+</style>
