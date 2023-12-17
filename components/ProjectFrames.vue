@@ -1,7 +1,7 @@
 <template>
   <div
     class="max-w-xl rounded-2xl max-h-full bg-gray-100"
-    :class="isPageLoaded ? 'active' : ''"
+    :class="isPageLoaded ? 'hover-effect' : ''"
     @readyForHover="readyForHover"
   >
     <h2 class="text-xl lg:text-2xl font-bold my-3 py-5 font-rubik">
@@ -53,7 +53,7 @@ export default {
 
 <style>
 @media (min-width: 1024px) {
-  .active:hover {
+  .hover-effect:hover {
     --tw-scale-x: 1.05;
     --tw-scale-y: 1.05;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y))

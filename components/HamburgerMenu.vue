@@ -1,9 +1,9 @@
 <template>
-  <div class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden">
+  <div class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden z-50">
     <nav
       class="hamburger-menu block absolute top-5"
       @click="toggleMenu"
-      :class="{ active: isActive && isPageLoaded }"
+      :class="isActive ? 'active' : ''"
     >
       <span
         class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
@@ -38,19 +38,9 @@ export default {
       isActive: false,
     };
   },
-  props: {
-    isPageLoaded: Boolean,
-  },
-  watch: {
-    $route() {
-      this.$emit("updateIsPageLoaded");
-    },
-  },
   methods: {
     toggleMenu() {
-      if (this.isPageLoaded) {
-        this.isActive = !this.isActive;
-      }
+      this.isActive = !this.isActive;
     },
   },
 };
@@ -93,10 +83,6 @@ export default {
 
 .top-menu {
   background-color: lightblue;
-}
-
-.hamburger-menu {
-  z-index: 2000;
 }
 .hamburger-menu ul {
   background-color: lightblue;

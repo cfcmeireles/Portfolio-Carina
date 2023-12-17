@@ -1,10 +1,7 @@
 <template>
   <div class="layout">
     <div class="nav-bars">
-      <HamburgerMenu
-        @updateIsPageLoaded="updateIsPageLoaded"
-        :isPageLoaded="isPageLoaded"
-      />
+      <HamburgerMenu />
       <NavBar @routeChanged="handleClassChanged" :showNameBar="showNameBar" />
     </div>
     <div>
@@ -16,14 +13,12 @@
 <script>
 export default {
   mounted() {
-    this.updateIsPageLoaded();
     this.handleClassChanged();
   },
   data() {
     return {
       timeOut: null,
       showNameBar: true,
-      isPageLoaded: false,
     };
   },
   methods: {
@@ -37,14 +32,6 @@ export default {
       } else {
         clearTimeout(this.timeOut);
         this.showNameBar = false;
-      }
-    },
-    updateIsPageLoaded() {
-      if (this.$route.path === "/" || this.$route.path === "/projects") {
-        setTimeout(() => {
-          this.isPageLoaded = true;
-        }, 2000);
-        this.isPageLoaded = false;
       }
     },
   },
