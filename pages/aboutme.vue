@@ -53,7 +53,7 @@
           My current tech stack:
         </h3>
         <div
-          class="flex flex-wrap md:w-full lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
+          class="fade-in-element flex flex-wrap md:w-full lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
           style="row-gap: 70px; grid-template-columns: 300px 300px 300px"
         >
           <img class="h-10 lg:h-16 flex mx-auto" src="../assets/html-5.png" />
@@ -80,3 +80,20 @@ export default {
   },
 };
 </script>
+
+<style>
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-1%, -1%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0, 0);
+  }
+}
+
+.fade-in-element {
+  animation: fade-in 1s ease-out;
+}
+</style>
