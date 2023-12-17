@@ -66,7 +66,7 @@
 
           <img class="h-10 lg:h-16 flex mx-auto" src="../assets/vue.png" />
 
-          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/nuxt-3.png" />
+          <img class="h-10 lg:h-16 flex mx-auto" src="../assets/nuxt.png" />
         </div>
       </div>
     </main>

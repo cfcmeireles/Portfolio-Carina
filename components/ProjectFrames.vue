@@ -16,6 +16,7 @@
       <img class="w-8 h-8" src="../assets/css-3.png" v-if="skills.css" />
       <img class="w-8 h-8" src="../assets/js.png" v-if="skills.js" />
       <img class="w-8 h-8" src="../assets/vue.png" v-if="skills.vue" />
+      <img class="w-8 h-8" src="../assets/nuxt.png" v-if="skills.nuxt" />
     </div>
   </div>
 </template>
@@ -38,6 +39,7 @@ export default {
         css: false,
         js: false,
         vue: false,
+        nuxt: false,
       }),
     },
   },

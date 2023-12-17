@@ -19,13 +19,35 @@
           class="project-frame flex flex-col items-center lg:grid lg:grid-cols-2 lg:flex-wrap lg:justify-center lg:items-start lg:gap-x-14 lg:gap-y-14"
         >
           <a
+            href="https://github.com/cfcmeireles/advice-generator-app"
+            target="_blank"
+          >
+            <Transition name="fade">
+              <ProjectFrames
+                :skills="{ html: true, css: true, nuxt: true }"
+                v-if="showTransitionProjectOne"
+              >
+                <template #title>Advice Generator</template>
+                <template #image
+                  ><img
+                    src="../assets/projects/AdviceGenerator.png"
+                    class="w-full h-full"
+                /></template>
+                <template #description>
+                  On a Frontend mentor challenge, I challenged myself with the
+                  task to build an app that provides users with advice
+                </template>
+              </ProjectFrames>
+            </Transition>
+          </a>
+          <a
             href="https://github.com/cfcmeireles/Password-generator"
             target="_blank"
           >
             <Transition name="fade">
               <ProjectFrames
                 :skills="{ html: true, css: true, vue: true }"
-                v-if="showTransitionProjectOne"
+                v-if="showTransitionProjectTwo"
               >
                 <template #title>Password Generator</template>
                 <template #image
@@ -44,7 +66,7 @@
             <Transition name="fade">
               <ProjectFrames
                 :skills="{ html: true, css: true, vue: true }"
-                v-if="showTransitionProjectTwo"
+                v-if="showTransitionProjectThree"
               >
                 <template #title>To do app</template>
                 <template #image
@@ -64,7 +86,7 @@
             <Transition name="fade">
               <ProjectFrames
                 :skills="{ html: true, css: true, js: true }"
-                v-if="showTransitionProjectThree"
+                v-if="showTransitionProjectFour"
               >
                 <template #title>Miniclip's Knowledge Base</template>
                 <template #image
@@ -74,32 +96,8 @@
                 /></template>
                 <template #description>
                   As part of my training, I had the chance to practice solid
-                  basics of HTML, CSS and JavaScript while completely revamping
-                  the support website for Miniclip</template
-                >
-              </ProjectFrames>
-            </Transition>
-          </a>
-          <a
-            href="https://github.com/cfcmeireles/Basketball-Scoreboard"
-            target="_blank"
-          >
-            <Transition name="fade">
-              <ProjectFrames
-                :skills="{ html: true, css: true, js: true }"
-                v-if="showTransitionProjectFour"
-              >
-                <template #title>Basketball Scoreboard</template>
-                <template #image
-                  ><img
-                    src="../assets/projects/BasketballScoreboard.png"
-                    class="w-full h-full"
-                /></template>
-                <template #description>
-                  As part of a Scrimba course, I developed extra features on a
-                  Basketball scoreboard app, allowing me to practice CSS grid
-                  and flex concepts in the process</template
-                >
+                  basics of HTML, CSS and JavaScript
+                </template>
               </ProjectFrames>
             </Transition>
           </a>
