@@ -26,7 +26,7 @@ export default {
       const timeOutFunction = () => {
         this.showNameBar = true;
       };
-      if (this.$route.path !== "/") {
+      if (this.$route.path !== "/" && this.$route.path !== "/submit") {
         (this.showNameBar = false),
           (this.timeOut = setTimeout(timeOutFunction, 1000));
       } else {
