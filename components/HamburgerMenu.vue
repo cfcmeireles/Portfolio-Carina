@@ -1,7 +1,7 @@
 <template>
   <body class="bg-darkblue" @click="closeMenuOnPageClick">
     <div
-      class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden z-50"
+      class="top-menu block w-full h-16 m-0 absolute top-0 left-0 lg:hidden z-50"
       :class="isActive ? 'active' : ''"
       @click.stop
     >
