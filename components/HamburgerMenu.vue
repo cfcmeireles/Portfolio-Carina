@@ -85,7 +85,6 @@ export default {
 .hamburger-menu.active .nav-items {
   display: block;
 }
-
 .hamburger-menu.active .nav-items li {
   color: #202833;
   list-style: none;
@@ -100,11 +99,28 @@ export default {
   background-color: lightblue;
 }
 
+.top-menu.active,
+.hamburger-menu.active {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.hamburger-menu.active .bar {
+  background: #202833;
+}
 .hamburger-menu ul {
   background-color: lightblue;
 }
 
 .hamburger-menu ul li {
   opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
