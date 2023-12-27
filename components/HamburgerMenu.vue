@@ -1,37 +1,42 @@
 <template>
-  <div
-    class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden z-50"
-    :class="isActive ? 'active' : ''"
-  >
-    <nav
-      class="hamburger-menu block absolute top-5"
-      @click="toggleMenu"
+  <body class="bg-darkblue" @click="closeMenuOnPageClick">
+    <div
+      class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden z-50"
       :class="isActive ? 'active' : ''"
+      @click.stop
     >
-      <span
-        class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
-      ></span>
-      <span
-        class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
-      ></span>
-      <span
-        class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
-      ></span>
+      <nav
+        class="hamburger-menu block absolute top-5"
+        @click="toggleMenu"
+        :class="isActive ? 'active' : ''"
+      >
+        <span
+          class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
+        ></span>
+        <span
+          class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
+        ></span>
+        <span
+          class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
+        ></span>
 
-      <ul class="nav-items hidden h-64 top-4 text-center font-rubik">
-        <NuxtLink to="/" style="text-decoration: none"> <li>Home</li></NuxtLink>
-        <NuxtLink to="/aboutme" style="text-decoration: none"
-          ><li>About me</li></NuxtLink
-        >
-        <NuxtLink to="/projects" style="text-decoration: none"
-          ><li>Projects</li></NuxtLink
-        >
-        <NuxtLink to="/contact" style="text-decoration: none"
-          ><li>Contact</li></NuxtLink
-        >
-      </ul>
-    </nav>
-  </div>
+        <ul class="nav-items hidden h-64 top-4 text-center font-rubik">
+          <NuxtLink to="/" style="text-decoration: none">
+            <li>Home</li></NuxtLink
+          >
+          <NuxtLink to="/aboutme" style="text-decoration: none"
+            ><li>About me</li></NuxtLink
+          >
+          <NuxtLink to="/projects" style="text-decoration: none"
+            ><li>Projects</li></NuxtLink
+          >
+          <NuxtLink to="/contact" style="text-decoration: none"
+            ><li>Contact</li></NuxtLink
+          >
+        </ul>
+      </nav>
+    </div>
+  </body>
 </template>
 
 <script>
@@ -45,6 +50,17 @@ export default {
     toggleMenu() {
       this.isActive = !this.isActive;
     },
+    closeMenuOnPageClick(e) {
+      if (!e.target.classList.contains("active")) {
+        this.isActive = false;
+      }
+    },
+  },
+  mounted() {
+    document.body.addEventListener("click", this.closeMenuOnPageClick);
+  },
+  beforeDestroy() {
+    document.body.removeEventListener("click", this.closeMenuOnPageClick);
   },
 };
 </script>
