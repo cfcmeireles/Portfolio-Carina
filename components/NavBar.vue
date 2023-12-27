@@ -27,7 +27,7 @@
           <div class="line"></div>
         </div>
         <div class="nav-item pb-12">
-          <NuxtLink to="/contacts" style="text-decoration: none; color: black"
+          <NuxtLink to="/contact" style="text-decoration: none; color: black"
             ><li class="mb-1.5 font-mono text-white text-xs">
               CONTACT
             </li></NuxtLink

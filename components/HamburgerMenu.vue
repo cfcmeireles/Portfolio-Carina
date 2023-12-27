@@ -1,5 +1,8 @@
 <template>
-  <div class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden z-50">
+  <div
+    class="top-menu block w-full h-16 m-0 fixed top-0 left-0 lg:hidden z-50"
+    :class="isActive ? 'active' : ''"
+  >
     <nav
       class="hamburger-menu block absolute top-5"
       @click="toggleMenu"
@@ -23,8 +26,8 @@
         <NuxtLink to="/projects" style="text-decoration: none"
           ><li>Projects</li></NuxtLink
         >
-        <NuxtLink to="/contacts" style="text-decoration: none"
-          ><li>Contacts</li></NuxtLink
+        <NuxtLink to="/contact" style="text-decoration: none"
+          ><li>Contact</li></NuxtLink
         >
       </ul>
     </nav>
@@ -72,7 +75,7 @@ export default {
 }
 
 .hamburger-menu.active .nav-items li {
-  color: white;
+  color: #202833;
   list-style: none;
   width: 100vw;
   display: flex;
@@ -81,9 +84,10 @@ export default {
   height: 25%;
 }
 
-.top-menu {
+.top-menu.active {
   background-color: lightblue;
 }
+
 .hamburger-menu ul {
   background-color: lightblue;
 }

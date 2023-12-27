@@ -5,7 +5,7 @@
         <h1 class="mt-20 lg:mt-5 text-lightblue text-4xl font-mono my-5">
           Projects
         </h1>
-        <p class="text-sm md:text-base lg:text-lg my-4 font-rubik">
+        <p class="mx-5 text-sm md:text-base lg:text-lg my-4 font-rubik">
           In this section you will find some of the projects I've worked on, for
           more, you can also check my
           <NuxtLink
@@ -31,7 +31,7 @@
                 <template #image
                   ><img
                     src="../assets/projects/AdviceGenerator.png"
-                    class="w-full h-full"
+                    class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
                   On a Frontend mentor challenge, I challenged myself with the
@@ -53,7 +53,7 @@
                 <template #image
                   ><img
                     src="../assets/projects/PasswordGenerator.png"
-                    class="w-full h-full"
+                    class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
                   In this project I had the opportunity to practice Vue 3 by
@@ -72,7 +72,7 @@
                 <template #image
                   ><img
                     src="../assets/projects/ToDoList.png"
-                    class="w-full h-full"
+                    class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
                   As my first Vue 3 project, I developed a simple to do app that
@@ -92,7 +92,7 @@
                 <template #image
                   ><img
                     src="../assets/projects/MiniclipKB.png"
-                    class="w-full h-full"
+                    class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
                   As part of my training, I had the chance to practice solid
@@ -106,7 +106,7 @@
     </main>
   </body>
 </template>
-    
+
 <script>
 import ProjectFrames from "~/components/ProjectFrames.vue";
 export default {
@@ -134,7 +134,7 @@ export default {
   },
 };
 </script>
-    
+
 <style>
 .fade-enter-active,
 .fade-leave-active {

@@ -1,10 +1,10 @@
 <template>
   <body class="bg-darkblue">
     <main class="h-screen flex items-center justify-center">
-      <div class="m-20">
+      <div class="mx-5 md:m-20">
         <h1 class="text-lightblue text-4xl font-mono my-5">About me</h1>
         <div
-          class="flex flex-col w-screen sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid"
+          class="flex flex-col sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid"
           style="grid-template-columns: repeat(auto-fill, minmax(900px, 1fr))"
         >
           <div>

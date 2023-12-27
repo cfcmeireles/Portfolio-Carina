@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-xl rounded-2xl max-h-full bg-gray-100"
+    class="mx-10 md:mx-0 max-w-xl rounded-2xl max-h-full bg-gray-100"
     :class="isPageLoaded ? 'hover-effect' : ''"
     @readyForHover="readyForHover"
   >
