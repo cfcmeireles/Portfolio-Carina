@@ -4,8 +4,8 @@
       <div class="mx-5 md:m-20">
         <h1 class="text-lightblue text-4xl font-mono my-5">About me</h1>
         <div
-          class="flex flex-col sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid"
-          style="grid-template-columns: repeat(auto-fill, minmax(900px, 1fr))"
+          class="about-me flex flex-col sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid lg:gap-36"
+          style="grid-template-columns: 600px 600px"
         >
           <div>
             <h2 class="text-xl lg:text-2xl my-5 text-white">
@@ -95,5 +95,19 @@ export default {
 
 .fade-in-element {
   animation: fade-in 1s ease-out;
+}
+
+@media (min-width: 1024px) and (max-width: 1390px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (min-width: 1391px) and (max-width: 1460px) {
+  .about-me {
+    column-gap: 1rem;
+  }
 }
 </style>
