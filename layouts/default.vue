@@ -26,7 +26,7 @@ export default {
       const timeOutFunction = () => {
         this.showNameBar = true;
       };
-      if (this.$route.path !== "/" && this.$route.path !== "/submit") {
+      if (this.$route.path !== "/") {
         (this.showNameBar = false),
           (this.timeOut = setTimeout(timeOutFunction, 1000));
       } else {
@@ -37,7 +37,6 @@ export default {
   },
 };
 </script>
-
 
 <style>
 @media only screen and (min-width: 950px) {
