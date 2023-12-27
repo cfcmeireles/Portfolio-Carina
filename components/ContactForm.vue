@@ -1,5 +1,8 @@
 <template>
-  <form class="max-w-screen-sm md:max-w-screen-md lg:max-w-full" @submit.prevent="handleSubmit">
+  <form
+    class="max-w-screen-sm inline-block md:max-w-screen-md lg:max-w-ful relative"
+    @submit.prevent="handleSubmit"
+  >
     <label class="text-white" for="name">Name</label>
     <input
       type="text"
@@ -30,12 +33,13 @@
       placeholder="Write here"
       required
     ></textarea>
+    <div class="text-white py-3" v-if="messageSent">Message sent ✅</div>
     <input
+      v-else
       class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500"
       type="submit"
       placeholder="Submit"
     />
-    <div class="text-white inline ml-5" v-if="messageSent">Message sent ✅</div>
   </form>
 </template>
 
