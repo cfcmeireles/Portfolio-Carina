@@ -35,7 +35,8 @@
                 /></template>
                 <template #description>
                   On a Frontend mentor challenge, I challenged myself with the
-                  task to build an app that provides users with advice
+                  task to build an app that provides users with advice task to
+                  build an app that provides users with advice
                 </template>
               </ProjectFrames>
             </Transition>

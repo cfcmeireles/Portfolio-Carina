@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-10 md:mx-0 max-w-xl rounded-2xl max-h-full bg-gray-100"
+    class="mx-10 md:mx-0 max-w-xl rounded-2xl bg-gray-100"
     :class="isPageLoaded ? 'hover-effect' : ''"
     @readyForHover="readyForHover"
   >
@@ -8,7 +8,9 @@
       <slot name="title"></slot>
     </h2>
     <slot name="image"></slot>
-    <p class="text-sm md:text-base lg:text-lg mt-3 mx-5 font-rubik text-black">
+    <p
+      class="text-sm md:text-base lg:text-lg mt-3 mx-5 font-rubik text-black h-32 sm:h-20 flex items-center justify-center"
+    >
       <slot name="description"></slot>
     </p>
     <div class="flex mx-auto mb-5 py-5 items-center justify-center">
