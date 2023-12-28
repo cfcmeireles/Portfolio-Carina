@@ -3,7 +3,7 @@
     <main class="h-screen flex items-center justify-center">
       <div class="mx-5 md:m-20">
         <h1
-          class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center mb-20 -mt-20 sm:mt-0"
+          class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center sm:mb-20 -mt-20 sm:mt-0"
         >
           About me
         </h1>
