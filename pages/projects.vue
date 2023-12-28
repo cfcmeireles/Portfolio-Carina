@@ -1,8 +1,10 @@
 <template>
   <body class="bg-darkblue">
-    <main class="h-full flex items-center justify-center">
+    <main class="h-full flex justify-center items-start">
       <div class="text-center mb-24">
-        <h1 class="mt-20 lg:mt-5 text-lightblue text-4xl font-mono my-5">
+        <h1
+          class="mt-20 lg:mt-5 text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5"
+        >
           Projects
         </h1>
         <p class="mx-5 text-sm md:text-base lg:text-lg my-4 font-rubik">
