@@ -1,37 +1,32 @@
 <template>
   <div
-    class="top-menu block w-full h-16 m-0 absolute top-0 left-0 lg:hidden z-50"
+    class="hamburger-menu block w-full h-16 m-0 absolute top-0 left-0 lg:hidden z-50"
     :class="isActive ? 'active' : ''"
+    @click="toggleMenu"
     @click.stop
   >
-    <nav
-      class="hamburger-menu block absolute top-5"
-      @click="toggleMenu"
-      :class="isActive ? 'active' : ''"
-    >
-      <span
-        class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
-      ></span>
-      <span
-        class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
-      ></span>
-      <span
-        class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
-      ></span>
+    <span
+      class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
+    ></span>
+    <span
+      class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
+    ></span>
+    <span
+      class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
+    ></span>
 
-      <ul class="nav-items hidden h-64 top-4 text-center font-rubik">
-        <NuxtLink to="/" style="text-decoration: none"> <li>Home</li></NuxtLink>
-        <NuxtLink to="/aboutme" style="text-decoration: none"
-          ><li>About me</li></NuxtLink
-        >
-        <NuxtLink to="/projects" style="text-decoration: none"
-          ><li>Projects</li></NuxtLink
-        >
-        <NuxtLink to="/contact" style="text-decoration: none"
-          ><li>Contact</li></NuxtLink
-        >
-      </ul>
-    </nav>
+    <ul class="nav-items hidden h-80 bottom-8 text-center font-rubik pt-10">
+      <NuxtLink to="/" style="text-decoration: none"> <li>Home</li></NuxtLink>
+      <NuxtLink to="/aboutme" style="text-decoration: none"
+        ><li>About me</li></NuxtLink
+      >
+      <NuxtLink to="/projects" style="text-decoration: none"
+        ><li>Projects</li></NuxtLink
+      >
+      <NuxtLink to="/contact" style="text-decoration: none"
+        ><li>Contact</li></NuxtLink
+      >
+    </ul>
   </div>
 </template>
 
@@ -62,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+.bar {
+  z-index: 99;
+}
 .hamburger-menu {
   left: 5px;
 }
@@ -95,11 +93,6 @@ export default {
   height: 25%;
 }
 
-.top-menu.active {
-  background-color: lightblue;
-}
-
-.top-menu.active,
 .hamburger-menu.active {
   animation: fadeIn 0.5s ease-in-out;
 }
