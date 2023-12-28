@@ -3,9 +3,7 @@
     <main class="flex items-center justify-center h-screen">
       <div class="mx-5">
         <h1 class="text-lightblue text-4xl font-mono my-5">Contact me</h1>
-        <form>
-          <ContactForm />
-        </form>
+        <ContactForm />
       </div>
     </main>
   </body>
