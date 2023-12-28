@@ -14,20 +14,22 @@
           CARINA MEIRELES
         </h1>
       </transition>
-      <VueWriter
-        v-if="showText"
-        :array="['I am an aspiring developer based in Lisbon, Portugal']"
-        :iterations="1"
-        :typeSpeed="50"
-        class="text-sm leading-8 text-white font-mono"
-      />
-      <VueWriter
-        v-if="showText2"
-        :array="['Currently employed by Miniclip']"
-        :iterations="1"
-        :typeSpeed="50"
-        class="text-sm leading-8 text-white font-mono"
-      />
+      <div class="px-5 sm:px-0">
+        <VueWriter
+          v-if="showText"
+          :array="['I am an aspiring developer based in Lisbon, Portugal']"
+          :iterations="1"
+          :typeSpeed="50"
+          class="text-sm leading-8 text-white font-mono"
+        />
+        <VueWriter
+          v-if="showText2"
+          :array="['Currently employed by Miniclip']"
+          :iterations="1"
+          :typeSpeed="50"
+          class="text-sm leading-8 text-white font-mono"
+        />
+      </div>
       <transition name="fadeIn">
         <div v-if="showIcons">
           <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
