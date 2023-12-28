@@ -28,8 +28,8 @@
                 v-if="showTransitionProjectOne"
               >
                 <template #title>Advice Generator</template>
-                <template #image
-                  ><img
+                <template #image>
+                  <img
                     src="../assets/projects/AdviceGenerator.png"
                     class="hidden md:block w-full h-full"
                 /></template>

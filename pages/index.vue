@@ -3,14 +3,17 @@
     <div class="text-center" style="height: 500px">
       <transition name="fade">
         <img
-          class="w-44 md:w-48 lg:w-52"
+          class="w-40 md:w-48 lg:w-52"
           v-if="showPhoto"
           src="../assets/kina_avatar.png"
         />
       </transition>
 
       <transition name="fade">
-        <h1 class="font-mulish text-lightblue text-4xl my-2.5" v-if="showName">
+        <h1
+          class="font-mulish text-lightblue text-2xl sm:text-3xl lg:text-4xl my-2.5"
+          v-if="showName"
+        >
           CARINA MEIRELES
         </h1>
       </transition>
@@ -20,14 +23,14 @@
           :array="['I am an aspiring developer based in Lisbon, Portugal']"
           :iterations="1"
           :typeSpeed="50"
-          class="text-sm leading-8 text-white font-mono"
+          class="text-xs sm:text-sm leading-8 sm:leading-8 text-white font-mono"
         />
         <VueWriter
           v-if="showText2"
           :array="['Currently employed by Miniclip']"
           :iterations="1"
           :typeSpeed="50"
-          class="text-sm leading-8 text-white font-mono"
+          class="text-xs sm:text-sm leading-8 sm:leading-8 text-white font-mono"
         />
       </div>
       <transition name="fadeIn">
@@ -35,7 +38,7 @@
           <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
             <img
               src="../assets/github-icon.svg"
-              class="pr-2.5 mt-2.5"
+              class="pr-2.5 mt-2.5 h-10 sm:h-11 md:h-12"
               alt="GitHub Logo"
             />
           </NuxtLink>
@@ -43,7 +46,11 @@
             to="https://www.linkedin.com/in/carina-meireles/"
             target="_blank"
           >
-            <img src="../assets/linkedin-icon.svg" alt="Linkedin Logo" />
+            <img
+              src="../assets/linkedin-icon.svg"
+              class="h-10 sm:h-11 md:h-12"
+              alt="Linkedin Logo"
+            />
           </NuxtLink>
         </div>
       </transition>
