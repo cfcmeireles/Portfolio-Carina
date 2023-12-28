@@ -85,7 +85,13 @@ export default {
 }
 
 .fade-in-element {
-  animation: fade-in 1s ease-out;
+  animation: fade-in 2s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .fade-in-element {
+    animation: fade-in 5s ease-out;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1390px) {
