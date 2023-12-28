@@ -34,8 +34,8 @@
                     class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
-                  On a Frontend mentor challenge, I challenged myself with the
-                  task to build an app that provides users with advice
+                  On a Frontend mentor challenge, I built an app that provides
+                  users with advice using Advice Slip JSON API
                 </template>
               </ProjectFrames>
             </Transition>
@@ -56,9 +56,9 @@
                     class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
-                  In this project I had the opportunity to practice Vue 3 by
-                  building a useful Password Generator</template
-                >
+                  I challenged myself to build a useful day to day tool, while
+                  practicing Vue 3 I created a Password Generator application
+                </template>
               </ProjectFrames>
             </Transition>
           </a>
@@ -68,7 +68,7 @@
                 :skills="{ html: true, css: true, vue: true }"
                 v-if="showTransitionProjectThree"
               >
-                <template #title>To do app</template>
+                <template #title>To Do List</template>
                 <template #image
                   ><img
                     src="../assets/projects/ToDoList.png"
@@ -95,8 +95,8 @@
                     class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
-                  As part of my training, I had the chance to practice solid
-                  basics of HTML, CSS and JavaScript
+                  As part of my training, I built Miniclip's player support
+                  website while learning HTML, CSS and JavaScript
                 </template>
               </ProjectFrames>
             </Transition>

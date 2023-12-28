@@ -14,17 +14,15 @@
             <p
               class="text-sm md:text-base lg:text-lg sm:!leading-loose md:!leading-loose lg:!leading-loose font-rubik"
             >
-              I'm an aspiring Web Developer with 1 year of learning experience.
-              I'm from Lisbon and I love technology and gaming.
+              I'm an aspiring Web Developer with 1 year of learning experience
+              currently residing in Lisbon.
             </p>
             <p
               class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
-              My goal is to develop interactive, responsive software that
-              seamlessly engages users and adapts to their needs, while
-              providing invaluable functionality. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Tempore, nostrum. Repellat, ratione.
-              Rem placeat quis sequi possimus ea magni corporis?
+              I have always been amazed by how technology can make our lives
+              easier, as such, my goal is to help companies solve real life
+              problems using technology to achieve it.
             </p>
           </div>
           <div>
@@ -34,18 +32,11 @@
             <p
               class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-              repudiandae voluptas tenetur veritatis officiis reprehenderit
-              architecto iure corrupti error dolore. Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Est repudiandae voluptas tenetur
-              veritatis officiis reprehenderit architecto iure corrupti error
-              dolore.
-            </p>
-            <p
-              class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
-            >
-              At the moment, I am still building a solid foundation in Front-end
-              development.
+              I have 1 year of experience in building projects both in my work
+              and professional time by focusing on Front-end technologies. This
+              experience includes building the player support website for
+              Miniclip using vanilla Javascript and building personal projects
+              with frameworks such as Vue 3 and Nuxt 3.
             </p>
           </div>
         </div>
