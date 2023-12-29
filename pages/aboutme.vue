@@ -3,7 +3,7 @@
     <main class="h-screen flex items-center justify-center">
       <div class="mx-5 md:m-20">
         <h1
-          class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center sm:mb-20 -mt-20 sm:mt-0"
+          class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center"
         >
           About me
         </h1>
@@ -18,29 +18,30 @@
             <p
               class="text-sm md:text-base lg:text-lg sm:!leading-loose md:!leading-loose lg:!leading-loose font-rubik"
             >
-              I'm an aspiring Web Developer with 1 year of learning experience
-              currently residing in Lisbon.
+              I'm a budding Web Developer based in Lisbon. For the past year,
+              I've been immersed in the exciting world of web development,
+              driven by my fascination with how technology can simplify our
+              lives.
             </p>
             <p
               class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
-              I have always been amazed by how technology can make our lives
-              easier, as such, my goal is to help companies solve real life
-              problems using technology to achieve it.
+              My mission? To use technology creatively and practically to solve
+              real-life challenges for businesses since I believe in the power
+              of web development to make a positive impact.
             </p>
           </div>
           <div>
-            <h2 class="text-xl lg:text-2xl my-5 text-white">
-              What is my skill level?
-            </h2>
+            <h2 class="text-xl lg:text-2xl my-5 text-white">What can I do?</h2>
             <p
               class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
             >
-              I have 1 year of experience in building projects both in my work
-              and professional time by focusing on Front-end technologies. This
-              experience includes building the player support website for
-              Miniclip using vanilla Javascript and building personal projects
-              with frameworks such as Vue 3 and Nuxt 3.
+              Over the past year, I've been honing my skills by working on
+              various projects. From making the player support website for
+              Miniclip using vanilla Javascript to tackling personal projects
+              with frameworks such as Vue 3 and Nuxt 3, I've been deeply engaged
+              in the front-end technologies that bring digital experiences to
+              life.
             </p>
           </div>
         </div>

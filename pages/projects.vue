@@ -36,8 +36,8 @@
                     class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
-                  On a Frontend mentor challenge, I built an app that provides
-                  users with advice using Advice Slip JSON API
+                  As a part of a Frontend Mentor Challenge, I used Advice Slip
+                  JSON API to build an app that provides users with life advice
                 </template>
               </ProjectFrames>
             </Transition>
@@ -58,8 +58,8 @@
                     class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
-                  I challenged myself to build a useful day to day tool, while
-                  practicing Vue 3 I created a Password Generator application
+                  To keep on practicing Vue 3, I challenged myself to build a
+                  Password Generator app, a useful day to day tool
                 </template>
               </ProjectFrames>
             </Transition>
@@ -77,9 +77,9 @@
                     class="hidden md:block w-full h-full"
                 /></template>
                 <template #description>
-                  As my first Vue 3 project, I developed a simple to do app that
-                  allows users to add, remove and filter through priority list
-                  tasks</template
+                  As my first Vue 3 project, I developed a simple to do list app
+                  that allows users to add, remove and filter through priority
+                  list tasks</template
                 >
               </ProjectFrames>
             </Transition>

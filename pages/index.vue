@@ -27,7 +27,7 @@
         />
         <VueWriter
           v-if="showText2"
-          :array="['Currently employed by Miniclip']"
+          :array="['Focused on creating projects with front-end technologies']"
           :iterations="1"
           :typeSpeed="50"
           class="text-xs sm:text-sm leading-8 sm:leading-8 text-white font-mono"
@@ -83,7 +83,7 @@ export default {
     }, 5000);
     setTimeout(() => {
       this.showIcons = true;
-    }, 7000);
+    }, 8500);
   },
 };
 </script>
