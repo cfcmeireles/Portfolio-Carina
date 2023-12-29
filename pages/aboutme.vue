@@ -18,10 +18,10 @@
             <p
               class="text-sm md:text-base lg:text-lg sm:!leading-loose md:!leading-loose lg:!leading-loose font-rubik"
             >
-              I'm a budding Web Developer based in Lisbon. For the past year,
-              I've been immersed in the exciting world of web development,
-              driven by my fascination with how technology can simplify our
-              lives.
+              I'm a budding Web Developer, currently employed by Miniclip. For
+              the past year, I've been immersed in the exciting world of web
+              development, driven by my fascination with how technology can
+              simplify our lives.
             </p>
             <p
               class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
