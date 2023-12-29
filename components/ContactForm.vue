@@ -3,7 +3,7 @@
     class="max-w-screen-sm inline-block md:max-w-screen-md lg:max-w-ful relative"
     @submit.prevent="handleSubmit"
   >
-    <label class="text-white" for="name">Name</label>
+    <label class="text-white font-rubik" for="name">Name</label>
     <input
       type="text"
       id="name"
@@ -13,7 +13,7 @@
       class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
       required
     />
-    <label class="text-white" for="email">Email</label>
+    <label class="text-white font-rubik" for="email">Email</label>
     <input
       type="email"
       name="email"
@@ -23,7 +23,7 @@
       class="w-full p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
       required
     />
-    <label class="text-white" for="message">Message</label>
+    <label class="text-white font-rubik" for="message">Message</label>
     <textarea
       class="w-full h-40 p-3 border-2 border-gray-400 rounded box-border mt-1.5 mb-4 resize-y"
       type="textarea"
@@ -33,10 +33,12 @@
       placeholder="Write here"
       required
     ></textarea>
-    <div class="text-white py-3" v-if="messageSent">Message sent ✅</div>
+    <div class="text-white py-3 font-rubik" v-if="messageSent">
+      Message sent ✅
+    </div>
     <input
       v-else
-      class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500"
+      class="py-3 px-5 rounded cursor-pointer text-white bg-green-300 hover:bg-green-500 font-rubik"
       type="submit"
       placeholder="Submit"
     />
