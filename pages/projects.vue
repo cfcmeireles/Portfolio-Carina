@@ -26,6 +26,7 @@
           <Transition name="fade">
             <ProjectFrames
               :skills="{ html: true, css: true, nuxt: true }"
+              :previews="{ projectOne: true }"
               v-if="showTransitionProjectOne"
             >
               <template #title>Advice Generator</template>
@@ -48,6 +49,7 @@
           <Transition name="fade">
             <ProjectFrames
               :skills="{ html: true, css: true, vue: true }"
+              :previews="{ projectTwo: true }"
               v-if="showTransitionProjectTwo"
             >
               <template #title>Password Generator</template>
@@ -67,6 +69,7 @@
           <Transition name="fade">
             <ProjectFrames
               :skills="{ html: true, css: true, vue: true }"
+              :previews="{ projectThree: true }"
               v-if="showTransitionProjectThree"
             >
               <template #title>To Do List</template>
@@ -87,6 +90,7 @@
           <Transition name="fade">
             <ProjectFrames
               :skills="{ html: true, css: true, js: true }"
+              :previews="{ projectFour: true }"
               v-if="showTransitionProjectFour"
             >
               <template #title>Miniclip's Knowledge Base</template>

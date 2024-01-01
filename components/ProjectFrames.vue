@@ -14,12 +14,56 @@
       <slot name="description"></slot>
     </p>
 
-    <div class="flex mx-auto mb-5 py-5 items-center justify-center">
+    <div class="flex mx-auto mb-5 py-5 items-center justify-center relative">
       <img class="w-8 h-8" src="../assets/html-5.png" v-if="skills.html" />
       <img class="w-8 h-8" src="../assets/css-3.png" v-if="skills.css" />
       <img class="w-8 h-8" src="../assets/js.png" v-if="skills.js" />
       <img class="w-8 h-8" src="../assets/vue.png" v-if="skills.vue" />
       <img class="w-8 h-8" src="../assets/nuxt.png" v-if="skills.nuxt" />
+      <a
+        href="https://advice-generator-app-cm.netlify.app/"
+        target="_blank"
+        v-if="previews.projectOne"
+      >
+        <img
+          src="../assets/expand-icon.svg"
+          class="h-5 absolute right-3 bottom-3"
+          alt="Linkedin Logo"
+        />
+      </a>
+      <a
+        href="https://password-generator-app-cm.netlify.app/"
+        target="_blank"
+        v-if="previews.projectTwo"
+      >
+        <img
+          src="../assets/expand-icon.svg"
+          class="h-5 absolute right-3 bottom-3"
+          alt="Linkedin Logo"
+        />
+      </a>
+      <a
+        href="https://to-do-app-cm.netlify.app/"
+        target="_blank"
+        v-if="previews.projectThree"
+      >
+        <img
+          src="../assets/expand-icon.svg"
+          class="h-5 absolute right-3 bottom-3"
+          alt="Linkedin Logo"
+        />
+      </a>
+      <a
+        href="https://support.miniclip.com/hc/en-us"
+        target="_blank"
+        v-if="previews.projectFour"
+      >
+        <img
+          src="../assets/expand-icon.svg"
+          class="h-5 absolute right-3 bottom-3"
+          alt="Linkedin Logo"
+        />
+      </a>
     </div>
   </div>
 </template>
@@ -43,6 +87,15 @@ export default {
         js: false,
         vue: false,
         nuxt: false,
+      }),
+    },
+    previews: {
+      type: Object,
+      default: () => ({
+        projectOne: false,
+        projectTwo: false,
+        projectThree: false,
+        projectFour: false,
       }),
     },
   },
