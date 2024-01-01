@@ -3,7 +3,7 @@ module.exports = {
     screens: {
       sm: "576px",
       md: "768px",
-      lg: "1024px",
+      lg: "1366px",
     },
     fontFamily: {
       mono: ["Space Mono", "monospace"],

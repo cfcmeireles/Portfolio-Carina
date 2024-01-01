@@ -9,7 +9,7 @@
     </h2>
     <slot name="image"></slot>
     <p
-      class="text-sm md:text-base lg:text-lg mt-3 mx-5 font-rubik text-black h-32 sm:h-20 flex items-center justify-center"
+      class="text-sm md:text-base mt-3 mx-5 font-rubik text-black h-32 sm:h-20 flex items-center justify-center"
     >
       <slot name="description"></slot>
     </p>

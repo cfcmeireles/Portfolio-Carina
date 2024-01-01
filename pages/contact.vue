@@ -1,6 +1,6 @@
 <template>
-  <main class="flex items-center justify-center h-screen">
-    <div class="mx-5">
+  <main class="flex justify-center items-center h-screen lg:relative">
+    <div class="mx-5 lg:absolute">
       <h1
         class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center"
       >
@@ -19,3 +19,8 @@ export default {
 };
 </script>
     
+<style scoped>
+main > div {
+  top: 20%;
+}
+</style>

@@ -1,13 +1,13 @@
 <template>
-  <main class="h-screen flex items-center justify-center">
-    <div class="mx-5 md:m-20">
+  <main class="flex justify-center items-center h-screen lg:relative">
+    <div class="mx-5 lg:absolute">
       <h1
         class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center"
       >
         About me
       </h1>
       <div
-        class="about-me flex flex-col sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid lg:gap-36"
+        class="about-me flex flex-col justify-center sm:max-w-screen-sm md:max-w-screen-md lg:max-w-full lg:w-full lg:grid lg:gap-36"
         style="grid-template-columns: 600px 600px"
       >
         <div>
@@ -15,7 +15,7 @@
             Hi, I'm <strong>Carina</strong>
           </h2>
           <p
-            class="text-sm md:text-base lg:text-lg sm:!leading-loose md:!leading-loose lg:!leading-loose font-rubik"
+            class="text-sm md:text-base sm:!leading-loose md:!leading-loose lg:!leading-loose font-rubik"
           >
             I'm a budding Web Developer, currently employed by Miniclip. For the
             past year, I've been immersed in the exciting world of web
@@ -23,17 +23,20 @@
             simplify our lives.
           </p>
           <p
-            class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
+            class="text-sm md:text-base leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
           >
             My mission? To use technology creatively and practically to solve
             real-life challenges for businesses since I believe in the power of
             web development to make a positive impact.
           </p>
+          <h3 class="text-xl lg:text-2xl my-5 text-white">
+            My current tech stack:
+          </h3>
         </div>
         <div>
           <h2 class="text-xl lg:text-2xl my-5 text-white">What can I do?</h2>
           <p
-            class="text-sm md:text-base lg:text-lg leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
+            class="text-sm md:text-base leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
           >
             Over the past year, I've been honing my skills by working on various
             projects. From making the player support website for Miniclip using
@@ -43,9 +46,6 @@
           </p>
         </div>
       </div>
-      <h3 class="text-xl lg:text-2xl my-5 text-white">
-        My current tech stack:
-      </h3>
       <div
         class="fade-in-element flex flex-wrap md:w-full lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
         style="row-gap: 70px; grid-template-columns: 300px 300px 300px"
@@ -74,7 +74,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -104,9 +104,32 @@ export default {
   }
 }
 
-@media (min-width: 1391px) and (max-width: 1460px) {
+@media (min-width: 1391px) and (max-width: 1500px) {
   .about-me {
     column-gap: 1rem;
   }
+}
+
+@media (min-width: 1391px) and (max-width: 1440px) {
+  .about-me {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1550px) {
+  .about-me {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1390px) {
+  main > div {
+    margin: 5rem !important;
+    top: 0 !important;
+  }
+}
+
+main > div {
+  top: 20%;
 }
 </style>
