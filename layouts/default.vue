@@ -39,6 +39,10 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #202833;
+}
+
 @media only screen and (min-width: 950px) {
   .layout {
     display: grid;
