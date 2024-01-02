@@ -43,6 +43,16 @@ body {
   background-color: #202833;
 }
 
+h1 {
+  font-family: "Space Mono", monospace;
+}
+
+h2,
+h3,
+p {
+  font-family: "Rubik", sans-serif;
+}
+
 @media only screen and (min-width: 950px) {
   .layout {
     display: grid;

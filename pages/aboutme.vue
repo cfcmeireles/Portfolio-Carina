@@ -11,7 +11,7 @@
         style="grid-template-columns: 600px 600px"
       >
         <div>
-          <h2 class="text-xl lg:text-2xl my-5 text-white">
+          <h2 class="text-xl lg:text-2xl my-5 text-white font-rubik">
             Hi, I'm <strong>Carina</strong>
           </h2>
           <p
@@ -29,12 +29,14 @@
             real-life challenges for businesses since I believe in the power of
             web development to make a positive impact.
           </p>
-          <h3 class="text-xl lg:text-2xl my-5 text-white">
+          <h3 class="text-xl lg:text-2xl my-5 text-white font-rubik">
             My current tech stack:
           </h3>
         </div>
         <div>
-          <h2 class="text-xl lg:text-2xl my-5 text-white">What can I do?</h2>
+          <h2 class="text-xl lg:text-2xl my-5 text-white font-rubik">
+            What can I do?
+          </h2>
           <p
             class="text-sm md:text-base leading-normal font-rubik sm:!leading-loose md:!leading-loose lg:!leading-loose"
           >
