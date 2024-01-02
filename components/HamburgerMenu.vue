@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hamburger-menu block w-full h-16 m-0 absolute top-0 left-0 lg:hidden z-50"
+    class="hamburger-menu block w-full h-16 m-0 absolute top-2 lg:hidden z-50"
     :class="isActive ? 'active' : ''"
     @click="toggleMenu"
     @click.stop
@@ -15,7 +15,7 @@
       class="bar relative block w-6 h-1 my-1 mx-0 bg-white transition-all duration-300 ease-in"
     ></span>
 
-    <ul class="nav-items hidden h-80 bottom-8 text-center font-rubik pt-10">
+    <ul class="nav-items hidden h-80 bottom-9 text-center font-rubik pt-10">
       <NuxtLink to="/" style="text-decoration: none"> <li>Home</li></NuxtLink>
       <NuxtLink to="/aboutme" style="text-decoration: none"
         ><li>About me</li></NuxtLink

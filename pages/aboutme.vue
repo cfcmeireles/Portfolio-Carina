@@ -47,7 +47,7 @@
         </div>
       </div>
       <div
-        class="fade-in-element flex flex-wrap md:w-full lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
+        class="fade-in-element flex flex-wrap pt-10 md:w-full lg:pt-0 lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
         style="row-gap: 70px; grid-template-columns: 300px 300px 300px"
       >
         <img class="h-10 lg:h-16 flex mx-auto" src="../assets/html-5.png" />
@@ -131,5 +131,11 @@ export default {
 
 main > div {
   top: 20%;
+}
+
+@media (max-width: 295px) {
+  h1 {
+    margin-top: 300px;
+  }
 }
 </style>
