@@ -47,7 +47,6 @@ h1 {
   font-family: "Space Mono", monospace;
 }
 
-h2,
 h3,
 p {
   font-family: "Rubik", sans-serif;
