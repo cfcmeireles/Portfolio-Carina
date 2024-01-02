@@ -140,6 +140,10 @@ export default {
 </script>
 
 <style scoped>
+body {
+  background-color: #202833;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 2s ease;

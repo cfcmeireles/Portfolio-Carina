@@ -20,6 +20,10 @@ export default {
 </script>
     
 <style scoped>
+body {
+  background-color: #202833;
+}
+
 main > div {
   top: 20%;
 }

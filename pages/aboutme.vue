@@ -75,6 +75,10 @@ export default {
 </script>
 
 <style scoped>
+body {
+  background-color: #202833;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
