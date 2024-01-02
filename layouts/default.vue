@@ -51,6 +51,7 @@ h2,
 h3,
 p {
   font-family: "Rubik", sans-serif;
+  color: white;
 }
 
 @media only screen and (min-width: 950px) {
