@@ -33,7 +33,7 @@
               <template #image>
                 <img
                   src="../assets/projects/AdviceGenerator.png"
-                  class="hidden md:block w-full h-full"
+                  class="!hidden md:!block w-full h-full"
               /></template>
               <template #description>
                 As a part of a Frontend Mentor Challenge, I used Advice Slip
@@ -56,7 +56,7 @@
               <template #image
                 ><img
                   src="../assets/projects/PasswordGenerator.png"
-                  class="hidden md:block w-full h-full"
+                  class="!hidden md:!block w-full h-full"
               /></template>
               <template #description>
                 To keep on practicing Vue 3, I challenged myself to build a
@@ -76,7 +76,7 @@
               <template #image
                 ><img
                   src="../assets/projects/ToDoList.png"
-                  class="hidden md:block w-full h-full"
+                  class="!hidden md:!block w-full h-full"
               /></template>
               <template #description>
                 As my first Vue 3 project, I developed a simple to do list app
@@ -97,7 +97,7 @@
               <template #image
                 ><img
                   src="../assets/projects/MiniclipKB.png"
-                  class="hidden md:block w-full h-full"
+                  class="!hidden md:!block w-full h-full"
               /></template>
               <template #description>
                 As part of my training, I built Miniclip's player support

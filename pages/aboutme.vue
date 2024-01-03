@@ -83,17 +83,6 @@ body {
   background-color: #202833;
 }
 
-h1 {
-  font-family: "Space Mono", monospace;
-}
-
-h2,
-h3,
-p {
-  font-family: "Rubik", sans-serif;
-  color: white;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
