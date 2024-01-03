@@ -93,6 +93,9 @@ export default {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fade-enter-active {
