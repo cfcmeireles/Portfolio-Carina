@@ -1,8 +1,8 @@
 <template>
-  <main class="flex justify-center items-center h-screen lg:relative">
+  <main class="flex justify-center h-screen lg:relative">
     <div class="mx-5 lg:absolute">
       <h1
-        class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center"
+        class="text-lightblue text-2xl sm:text-3xl lg:text-4xl font-mono my-5 text-center mt-20 lg:mt-0"
       >
         About me
       </h1>
@@ -11,7 +11,9 @@
         style="grid-template-columns: 600px 600px"
       >
         <div>
-          <h2 class="text-xl lg:text-2xl my-5 text-white font-rubik">
+          <h2
+            class="pb-5 md:pb-0 text-xl lg:text-2xl my-5 text-white font-rubik"
+          >
             Hi, I'm <strong>Carina</strong>
           </h2>
           <p
@@ -29,12 +31,11 @@
             real-life challenges for businesses since I believe in the power of
             web development to make a positive impact.
           </p>
-          <h3 class="text-xl lg:text-2xl my-5 text-white font-rubik">
-            My current tech stack:
-          </h3>
         </div>
         <div>
-          <h2 class="text-xl lg:text-2xl my-5 text-white font-rubik">
+          <h2
+            class="pb-5 md:pb-0 text-xl lg:text-2xl my-5 text-white font-rubik"
+          >
             What can I do?
           </h2>
           <p
@@ -48,6 +49,9 @@
           </p>
         </div>
       </div>
+      <h3 class="text-xl lg:text-2xl my-5 text-white font-rubik">
+        My current tech stack:
+      </h3>
       <div
         class="fade-in-element flex flex-wrap pt-10 md:w-full lg:pt-0 lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full"
         style="row-gap: 70px; grid-template-columns: 300px 300px 300px"

@@ -34,12 +34,15 @@
     </ul>
     <div
       :class="[showWithFade ? 'name-bar active' : 'name-bar']"
+      class="pl-5"
       v-if="showNameBar"
     >
-      <p class="text-sm">Hire me</p>
-      <p class="text-sm">carinacmeireles@gmail.com</p>
       <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
-        <img src="../assets/github-icon.svg" class="w-8" alt="GitHub Logo" />
+        <img
+          src="../assets/github-icon.svg"
+          class="w-8 mr-2"
+          alt="GitHub Logo"
+        />
       </NuxtLink>
       <NuxtLink
         to="https://www.linkedin.com/in/carina-meireles/"
