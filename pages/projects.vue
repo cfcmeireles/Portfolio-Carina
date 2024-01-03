@@ -140,8 +140,6 @@ export default {
 </script>
 
 <style scoped>
-@import "../tailwind.css";
-
 body {
   background-color: #202833;
 }
