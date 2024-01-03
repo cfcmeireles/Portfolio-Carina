@@ -53,7 +53,7 @@
         My current tech stack:
       </h3>
       <div
-        class="fade-in-element flex flex-wrap pt-10 md:w-full lg:pt-0 lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full icons"
+        class="fade-in-element flex flex-wrap pt-10 pb-10 md:w-full lg:pt-0 lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full icons"
         style="row-gap: 70px; grid-template-columns: 300px 300px 300px"
       >
         <img class="h-10 lg:h-16 flex mx-auto" src="../assets/html-5.png" />
@@ -143,11 +143,5 @@ body {
 
 main > div {
   top: 20%;
-}
-
-@media (max-width: 315px) {
-  .icons {
-    padding-bottom: 100px;
-  }
 }
 </style>
