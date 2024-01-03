@@ -77,8 +77,7 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import "../tailwind.css";
 
 body {
   background-color: #202833;
