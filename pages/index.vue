@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex items-center justify-center">
+  <main class="h-screen flex items-center justify-center">
     <div class="text-center" style="height: 500px">
       <transition name="fade">
         <img
@@ -34,7 +34,7 @@
         />
       </div>
       <transition name="fadeIn">
-        <div v-if="showIcons">
+        <div v-if="showIcons" class="mt-2.5">
           <a
             href="https://github.com/cfcmeireles"
             target="_blank"
@@ -52,7 +52,7 @@
         </div>
       </transition>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -93,9 +93,6 @@ export default {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fade-enter-active {
