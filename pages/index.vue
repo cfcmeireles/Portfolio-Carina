@@ -55,7 +55,7 @@
   </main>
 </template>
 
-<script>
+<script defer>
 import VueWriter from "vue-writer";
 export default {
   components: { VueWriter },
