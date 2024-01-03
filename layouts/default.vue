@@ -39,20 +39,8 @@ export default {
 </script>
 
 <style>
-@import "../tailwind.css";
-
 body {
   background-color: #202833;
-}
-
-h1 {
-  font-family: "Space Mono", monospace;
-}
-
-h3,
-p {
-  font-family: "Rubik", sans-serif;
-  color: white;
 }
 
 @media only screen and (min-width: 950px) {
