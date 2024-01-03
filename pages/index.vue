@@ -35,23 +35,20 @@
       </div>
       <transition name="fadeIn">
         <div v-if="showIcons">
-          <NuxtLink to="https://github.com/cfcmeireles" target="_blank">
-            <img
-              src="../assets/github-icon.svg"
-              class="pr-2.5 mt-2.5 h-10 sm:h-11 md:h-12"
-              alt="GitHub Logo"
-            />
-          </NuxtLink>
-          <NuxtLink
-            to="https://www.linkedin.com/in/carina-meireles/"
+          <a
+            href="https://github.com/cfcmeireles"
             target="_blank"
+            class="pr-2.5 mt-2.5 h-10 sm:h-11 md:h-12"
           >
-            <img
-              src="../assets/linkedin-icon.svg"
-              class="h-10 sm:h-11 md:h-12"
-              alt="Linkedin Logo"
-            />
-          </NuxtLink>
+            <img src="../assets/github-icon.svg" alt="GitHub Logo" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/carina-meireles/"
+            target="_blank"
+            class="h-10 sm:h-11 md:h-12"
+          >
+            <img src="../assets/linkedin-icon.svg" alt="Linkedin Logo" />
+          </a>
         </div>
       </transition>
     </div>
