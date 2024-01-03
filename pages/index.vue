@@ -55,10 +55,14 @@
   </main>
 </template>
 
-<script defer>
+<script>
 import VueWriter from "vue-writer";
 export default {
   components: { VueWriter },
+  async asyncData({ params }) {
+    const response = await fetchData(params.id);
+    return { data: response.data };
+  },
   data() {
     return {
       showPhoto: false,

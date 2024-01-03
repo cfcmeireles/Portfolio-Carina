@@ -39,8 +39,6 @@ export default {
 </script>
 
 <style>
-@import "../tailwind.css";
-
 body {
   background-color: #202833;
 }
