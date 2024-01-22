@@ -1,6 +1,6 @@
 <template>
-  <main class="h-screen flex items-center justify-center">
-    <div class="text-center" style="height: 500px">
+  <main class="main-container h-screen flex items-center justify-center">
+    <div class="div-container text-center" style="height: 500px">
       <transition name="fade">
         <img
           class="w-40 md:w-48 lg:w-52"
@@ -82,6 +82,26 @@ export default {
     setTimeout(() => {
       this.showIcons = true;
     }, 8500);
+    window.addEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.$nextTick(() => {
+        this.centerContent();
+      });
+    },
+    centerContent() {
+      const container = document.querySelector(".main-container");
+      if (container) {
+        const containerHeight = container.clientHeight;
+        const content = container.querySelector(".div-container");
+        if (content) {
+          const contentHeight = content.clientHeight;
+          const marginTop = (containerHeight - contentHeight) / 2;
+          content.style.marginTop = `${marginTop}px`;
+        }
+      }
+    },
   },
 };
 </script>
