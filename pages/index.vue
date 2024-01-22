@@ -97,7 +97,7 @@ export default {
         const content = container.querySelector(".div-container");
         if (content) {
           const contentHeight = content.clientHeight;
-          const marginTop = (containerHeight - contentHeight) * 2;
+          const marginTop = 0;
           content.style.marginTop = `${marginTop}px`;
         }
       }
