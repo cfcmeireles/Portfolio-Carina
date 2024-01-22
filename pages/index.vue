@@ -73,15 +73,18 @@ export default {
     document.body.classList.add("gradient-body");
     this.showPhoto = true;
     this.showName = true;
-    setTimeout(() => {
-      this.showText = true;
-    }, 2000);
-    setTimeout(() => {
-      this.showText2 = true;
-    }, 5000);
-    setTimeout(() => {
-      this.showIcons = true;
-    }, 8500);
+
+    this.$nextTick(() => {
+      setTimeout(() => {
+        this.showText = true;
+      }, 2000);
+      setTimeout(() => {
+        this.showText2 = true;
+      }, 5000);
+      setTimeout(() => {
+        this.showIcons = true;
+      }, 8500);
+    });
   },
 };
 </script>
