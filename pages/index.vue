@@ -1,23 +1,23 @@
 <template>
   <main class="h-screen flex items-center justify-center">
     <div class="text-center" style="height: 500px">
-      <transition name="fade" appear>
+      <transition-group name="fade" mode="out-in">
         <img
           class="w-40 md:w-48 lg:w-52"
           v-if="showPhoto"
           alt="Carina photo"
           src="../assets/kina_avatar.png"
         />
-      </transition>
+      </transition-group>
 
-      <transition name="fade" appear>
+      <transition-group name="fade" mode="out-in">
         <h1
           class="font-mulish text-lightblue text-2xl sm:text-3xl lg:text-4xl my-2.5"
           v-if="showName"
         >
           CARINA MEIRELES
         </h1>
-      </transition>
+      </transition-group>
       <div class="px-5 sm:px-0">
         <VueWriter
           v-if="showText"
@@ -73,18 +73,15 @@ export default {
     document.body.classList.add("gradient-body");
     this.showPhoto = true;
     this.showName = true;
-
-    this.$nextTick(() => {
-      setTimeout(() => {
-        this.showText = true;
-      }, 2000);
-      setTimeout(() => {
-        this.showText2 = true;
-      }, 5000);
-      setTimeout(() => {
-        this.showIcons = true;
-      }, 8500);
-    });
+    setTimeout(() => {
+      this.showText = true;
+    }, 2000);
+    setTimeout(() => {
+      this.showText2 = true;
+    }, 5000);
+    setTimeout(() => {
+      this.showIcons = true;
+    }, 8500);
   },
 };
 </script>
