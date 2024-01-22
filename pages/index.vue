@@ -82,6 +82,20 @@ export default {
     setTimeout(() => {
       this.showIcons = true;
     }, 8500);
+    window.addEventListener("resize", this.calcVH);
+    window.addEventListener("orientationchange", this.calcVH);
+  },
+  methods: {
+    calcVH() {
+      const mainContainer = this.$refs.mainContainer;
+      if (mainContainer) {
+        const vH = Math.max(
+          document.documentElement.clientHeight,
+          window.innerHeight || 0
+        );
+        mainContainer.setAttribute("style", "height:" + vH + "px;");
+      }
+    },
   },
 };
 </script>
