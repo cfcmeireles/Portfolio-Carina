@@ -1,7 +1,7 @@
 <template>
   <main class="h-screen flex items-center justify-center">
     <div class="text-center" style="height: 500px">
-      <transition name="fade">
+      <transition name="fade" appear>
         <img
           class="w-40 md:w-48 lg:w-52"
           v-if="showPhoto"
@@ -10,7 +10,7 @@
         />
       </transition>
 
-      <transition name="fade">
+      <transition name="fade" appear>
         <h1
           class="font-mulish text-lightblue text-2xl sm:text-3xl lg:text-4xl my-2.5"
           v-if="showName"
@@ -82,20 +82,6 @@ export default {
     setTimeout(() => {
       this.showIcons = true;
     }, 8500);
-    window.addEventListener("resize", this.handleResize);
-    window.addEventListener("orientationchange", this.handleResize);
-  },
-  methods: {
-    handleResize() {
-      setTimeout(() => {
-        this.$forceUpdate();
-      }, 100);
-    },
-  },
-
-  beforeDestroy() {
-    window.removeEventListener("resize", this.handleResize);
-    window.removeEventListener("orientationchange", this.handleResize);
   },
 };
 </script>
