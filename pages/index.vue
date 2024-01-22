@@ -1,23 +1,23 @@
 <template>
-  <main class="h-screen flex items-center justify-center">
+  <main class="flex items-center justify-center" style="height: 100dvh">
     <div class="text-center" style="height: 500px">
-      <transition-group name="fade" mode="out-in">
+      <transition name="fade">
         <img
           class="w-40 md:w-48 lg:w-52"
           v-if="showPhoto"
           alt="Carina photo"
           src="../assets/kina_avatar.png"
         />
-      </transition-group>
+      </transition>
 
-      <transition-group name="fade" mode="out-in">
+      <transition name="fade">
         <h1
           class="font-mulish text-lightblue text-2xl sm:text-3xl lg:text-4xl my-2.5"
           v-if="showName"
         >
           CARINA MEIRELES
         </h1>
-      </transition-group>
+      </transition>
       <div class="px-5 sm:px-0">
         <VueWriter
           v-if="showText"
