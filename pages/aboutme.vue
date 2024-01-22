@@ -49,24 +49,48 @@
           </p>
         </div>
       </div>
-      <h3 class="text-xl lg:text-2xl my-5 text-white font-rubik">
+      <h3 class="tech-stack text-xl lg:text-2xl my-5 text-white font-rubik">
         My current tech stack:
       </h3>
       <div
         class="fade-in-element flex flex-wrap pt-10 pb-10 md:w-full lg:pt-0 lg:mt-12 lg:grid lg:text-center lg:justify-center lg:w-full icons"
         style="row-gap: 70px; grid-template-columns: 300px 300px 300px"
       >
-        <img class="h-10 lg:h-16 flex mx-auto" src="../assets/html-5.png" />
+        <img
+          class="h-10 lg:h-16 flex mx-auto"
+          src="../assets/html-5.png"
+          alt="HTML Icon"
+        />
 
-        <img class="h-10 lg:h-16 flex mx-auto" src="../assets/css-3.png" />
+        <img
+          class="h-10 lg:h-16 flex mx-auto"
+          src="../assets/css-3.png"
+          alt="CSS Icon"
+        />
 
-        <img class="h-10 lg:h-16 flex mx-auto" src="../assets/tailwind.png" />
+        <img
+          class="h-10 lg:h-16 flex mx-auto"
+          src="../assets/tailwind.png"
+          alt="Tailwind Icon"
+        />
 
-        <img class="h-10 lg:h-16 flex mx-auto" src="../assets/js.png" />
+        <img
+          class="h-10 lg:h-16 flex mx-auto"
+          src="../assets/js.png"
+          alt="JavaScript Icon"
+        />
 
-        <img class="h-10 lg:h-16 flex mx-auto" src="../assets/vue.png" />
+        <img
+          class="h-10 lg:h-16 flex mx-auto"
+          src="../assets/vue.png"
+          alt="Vue Icon"
+        />
 
-        <img class="h-10 lg:h-16 flex mx-auto" src="../assets/nuxt.png" />
+        <img
+          class="h-10 lg:h-16 flex mx-auto"
+          src="../assets/nuxt.png"
+          alt="Nuxt Icon"
+        />
       </div>
     </div>
   </main>
@@ -126,11 +150,19 @@ body {
   .about-me {
     margin-left: 25px;
   }
+
+  .tech-stack {
+    margin-left: 35px;
+  }
 }
 
 @media (min-width: 1501px) and (max-width: 1550px) {
   .about-me {
     margin-left: 25px;
+  }
+
+  .tech-stack {
+    margin-left: 35px;
   }
 }
 

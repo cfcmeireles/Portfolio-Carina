@@ -15,11 +15,36 @@
     </p>
 
     <div class="flex mx-auto mb-5 py-5 items-center justify-center relative">
-      <img class="w-8 h-8" src="../assets/html-5.png" v-if="skills.html" />
-      <img class="w-8 h-8" src="../assets/css-3.png" v-if="skills.css" />
-      <img class="w-8 h-8" src="../assets/js.png" v-if="skills.js" />
-      <img class="w-8 h-8" src="../assets/vue.png" v-if="skills.vue" />
-      <img class="w-8 h-8" src="../assets/nuxt.png" v-if="skills.nuxt" />
+      <img
+        class="w-8 h-8"
+        src="../assets/html-5.png"
+        alt="HTML Icon"
+        v-if="skills.html"
+      />
+      <img
+        class="w-8 h-8"
+        src="../assets/css-3.png"
+        alt="CSS Icon"
+        v-if="skills.css"
+      />
+      <img
+        class="w-8 h-8"
+        src="../assets/js.png"
+        alt="JavaScript Icon"
+        v-if="skills.js"
+      />
+      <img
+        class="w-8 h-8"
+        src="../assets/vue.png"
+        alt="Vue Icon"
+        v-if="skills.vue"
+      />
+      <img
+        class="w-8 h-8"
+        src="../assets/nuxt.png"
+        alt="Nuxt Icon"
+        v-if="skills.nuxt"
+      />
       <a
         href="https://advice-generator-app-cm.netlify.app/"
         target="_blank"

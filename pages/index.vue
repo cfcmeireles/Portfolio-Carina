@@ -5,6 +5,7 @@
         <img
           class="w-40 md:w-48 lg:w-52"
           v-if="showPhoto"
+          alt="Carina photo"
           src="../assets/kina_avatar.png"
         />
       </transition>
