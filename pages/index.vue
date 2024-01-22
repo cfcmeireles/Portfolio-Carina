@@ -1,5 +1,5 @@
 <template>
-  <main class="flex items-center justify-center" style="height: 100dvh">
+  <main class="h-screen flex items-center justify-center">
     <div class="text-center" style="height: 500px">
       <transition name="fade">
         <img
@@ -39,16 +39,23 @@
           <a
             href="https://github.com/cfcmeireles"
             target="_blank"
-            class="pr-2.5 mt-2.5 h-10 sm:h-11 md:h-12"
+            class="pr-2.5 mt-2.5"
           >
-            <img src="../assets/github-icon.svg" alt="GitHub Logo" />
+            <img
+              src="../assets/github-icon.svg"
+              alt="GitHub Logo"
+              class="h-9 md:h-12"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/carina-meireles/"
             target="_blank"
-            class="h-10 sm:h-11 md:h-12"
           >
-            <img src="../assets/linkedin-icon.svg" alt="Linkedin Logo" />
+            <img
+              src="../assets/linkedin-icon.svg"
+              alt="Linkedin Logo"
+              class="h-9 md:h-12"
+            />
           </a>
         </div>
       </transition>
@@ -82,20 +89,6 @@ export default {
     setTimeout(() => {
       this.showIcons = true;
     }, 8500);
-    window.addEventListener("resize", this.calcVH);
-    window.addEventListener("orientationchange", this.calcVH);
-  },
-  methods: {
-    calcVH() {
-      const mainContainer = this.$refs.mainContainer;
-      if (mainContainer) {
-        const vH = Math.max(
-          document.documentElement.clientHeight,
-          window.innerHeight || 0
-        );
-        mainContainer.setAttribute("style", "height:" + vH + "px;");
-      }
-    },
   },
 };
 </script>
